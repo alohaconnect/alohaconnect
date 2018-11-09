@@ -1,0 +1,8 @@
+.segment, .form .column {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.column {
+  border: 1px solid rgba(34,36,38,.15);
+}
