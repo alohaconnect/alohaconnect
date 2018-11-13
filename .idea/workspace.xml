@@ -21,22 +21,24 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="18" />
+          <entry key="jsx" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="JSX Harmony" value="65" />
           <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="jsx" value="1" />
+          <entry key="jsx" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSX Harmony" value="1" />
+          <entry key="JSX Harmony" value="8" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -89,11 +91,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Landing.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/StudentHome.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/SignupStudent.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-785">
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/StudentDescription.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/CompanyHome.jsx">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ListStuffAdmin.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="64" lean-forward="true" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+            <state>
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -102,105 +149,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/imports/ui/components/StuffItem.jsx">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddPosition.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="-12">
+              <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/imports/ui/components/PositionCard.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/imports/ui/components/PositionItem.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/EditStuff.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddStuff.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="54" column="68" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="68" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/imports/startup/both/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/imports/startup/server/position.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/imports/api/position/position.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/imports/startup/server/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -228,6 +182,8 @@
         <option value="$PROJECT_DIR$/app/imports/ui/components/PositionCard.jsx" />
         <option value="$PROJECT_DIR$/app/imports/ui/components/PositionItem.jsx" />
         <option value="$PROJECT_DIR$/app/imports/ui/pages/CompanyHome.jsx" />
+        <option value="$PROJECT_DIR$/app/imports/ui/pages/StudentHome.jsx" />
+        <option value="$PROJECT_DIR$/app/imports/ui/pages/StudentDescription.jsx" />
       </list>
     </option>
   </component>
@@ -243,177 +199,21 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/abbrev-4ebe0b2e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ajv-de99ab3f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ansi-regex-0f17b5f7/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ansi-regex-1f8b9f5e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/aproba-2b1ecbef/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/are-we-there-yet-bd052426/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/asn1-61e3db34/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/assert-plus-14667043/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/assert-plus-3cdba5fb/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/assert-plus-41bdb88c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/assert-plus-52893b77/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/assert-plus-aa8c577c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/assert-plus-f3f5f698/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/asynckit-115f1b3a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/aws-sign2-d911cd21/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/aws4-8401fa22/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/balanced-match-630c0aad/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/bcrypt-pbkdf-4fd7500f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/block-stream-dc45103e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/boom-d9fd1dbd/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/brace-expansion-8b50d461/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/caseless-fde78f9e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/chownr-94125cf9/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/co-ee742def/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/code-point-at-d9145e7f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/combined-stream-abb6e21e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/concat-map-f218538b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/console-control-strings-18306563/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/core-util-is-3ad80385/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/core-util-is-5061386c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/core-util-is-5f64f269/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/cryptiles-c7674e57/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/dashdash-106a2fcc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/debug-e1730b13/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/deep-extend-7ec12dbe/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/delayed-stream-5b87a94f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/delegates-9bd2b01f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/detect-libc-b6f034b3/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ecc-jsbn-53d2a44b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/extend-bba5565c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/extsprintf-9919228f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/forever-agent-194c80fb/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/form-data-de0062d6/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/fs-minipass-fd5437f0/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/fs.realpath-ad314832/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/fstream-de2df59c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/gauge-25f9382a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/getpass-bbdb4968/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/glob-5b0ee3dc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/graceful-fs-e28b08a4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/har-schema-893bb96b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/har-validator-f64d8467/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/has-unicode-4e4d5767/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/hawk-8ee4c13b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/hoek-10a138ee/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/http-signature-68dc3f17/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/iconv-lite-f615a8b4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ignore-walk-89eb2441/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/inflight-d4ebde70/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/inherits-0c964a35/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/inherits-48bfe32c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/inherits-7a92318d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ini-a3727816/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/is-fullwidth-code-point-4ee7f12c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/is-typedarray-e18c4c24/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/isarray-2ca5a099/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/isarray-90c62923/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/isexe-25f13c2c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/isstream-cdb37286/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/jsbn-b94e1ccc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/json-schema-78c0cc5c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/json-stable-stringify-b743380d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/json-stringify-safe-b75b6fef/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/jsonify-064a9691/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/jsprim-0d6f1ba7/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/mime-db-9ae317e1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/mime-types-ce4ed802/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/minimatch-e3597c1d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/minimist-0cfeac2c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/minimist-d5da70a8/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/minipass-571f2247/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/minizlib-8eb46c9b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/mkdirp-60b804b1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ms-2ee7e449/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/needle-3e81716f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/node-gyp-d134ab37/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/node-pre-gyp-2b446a40/lib/util/nw-pre-gyp/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/node-pre-gyp-2b446a40/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/nopt-3d460800/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/nopt-623ea63e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/npm-bundled-58875bfd/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/npm-packlist-d0ef4eda/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/npmlog-532872aa/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/number-is-nan-d2094940/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/oauth-sign-be79b086/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/object-assign-aab61529/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/once-a70410ef/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/os-homedir-890ccd9b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/os-tmpdir-8ce35cdb/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/osenv-7653701d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/path-is-absolute-a1896585/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/performance-now-ad4db589/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/process-nextick-args-031d8bf8/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/process-nextick-args-f834fa80/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/punycode-39fd8f28/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/qs-c4c6f199/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/rc-a41a89bc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/readable-stream-6fa0c611/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/readable-stream-85e32954/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/request-3860c49a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/rimraf-501221ac/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/safe-buffer-5572e510/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/safe-buffer-56aef09f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/safe-buffer-8a9304a6/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/safer-buffer-fb10ff5f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/sax-794ddd52/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/semver-0eefb94a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/set-blocking-03446389/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/signal-exit-d35afe9c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/sntp-df14eb14/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/sshpk-18f5eac8/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/string-width-a929e5ee/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/string_decoder-250b0aef/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/string_decoder-2d903eec/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/stringstream-9f10593b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/strip-ansi-21c68fe4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/strip-ansi-4ba69fda/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/strip-json-comments-93d0310f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/tar-63bc92c8/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/tar-b6d42f60/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/tough-cookie-93700289/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/tunnel-agent-df74792c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/tweetnacl-474c0583/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/util-deprecate-10d5ade3/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/util-deprecate-33a8b237/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/uuid-21f7c401/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/verror-23c680ae/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/which-2fc5aa0b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/wide-align-5f3298a9/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/wrappy-8302e6bd/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/yallist-4dbcade8/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/amdefine/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/ansi-styles/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/asap/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/chalk/node_modules/ansi-regex/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/chalk/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/core-util-is/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/duplexer2/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/escape-string-regexp/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/fibers/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/has-ansi/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/isarray/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/meteor-promise/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/object-assign/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/process-nextick-args/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/promise/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/readable-stream/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/safe-buffer/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/semver/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/source-map-support/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/source-map/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/through2/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/underscore/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/util-deprecate/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/xtend/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/@babel/runtime/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/@semantic-ui-react/event-stack/node_modules/prop-types/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/@semantic-ui-react/event-stack/package.json" />
@@ -421,7 +221,6 @@
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/classnames/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/clone/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/core-js/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/core-util-is/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/encoding/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/exenv/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/extend/package.json" />
@@ -821,7 +620,6 @@
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/node-fetch/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/object-assign/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/path-to-regexp/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/process-nextick-args/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/promise/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/prop-types/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/punycode/package.json" />
@@ -830,11 +628,8 @@
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/react-router-dom/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/react-router/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/react/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/readable-stream/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/readable-stream/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/regenerator-runtime/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/resolve-pathname/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/safe-buffer/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/semantic-ui-css/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/semantic-ui-react/node_modules/@babel/runtime/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/semantic-ui-react/node_modules/classnames/package.json" />
@@ -844,11 +639,9 @@
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/setimmediate/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/shallowequal/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/simpl-schema/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/string_decoder/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/ua-parser-js/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/uniforms-semantic/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/uniforms/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/util-deprecate/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/value-equal/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/warning/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/whatwg-fetch/package.json" />
@@ -1644,148 +1437,6 @@
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/split2/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/nan/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/nan/tools/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/node_modules/minimist/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/nopt/node_modules/abbrev/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/nopt/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/are-we-there-yet/node_modules/delegates/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/are-we-there-yet/node_modules/readable-stream/node_modules/buffer-shims/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/are-we-there-yet/node_modules/readable-stream/node_modules/core-util-is/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/are-we-there-yet/node_modules/readable-stream/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/are-we-there-yet/node_modules/readable-stream/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/are-we-there-yet/node_modules/readable-stream/node_modules/process-nextick-args/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/are-we-there-yet/node_modules/readable-stream/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/are-we-there-yet/node_modules/readable-stream/node_modules/util-deprecate/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/are-we-there-yet/node_modules/readable-stream/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/are-we-there-yet/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/console-control-strings/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/aproba/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/has-color/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/has-unicode/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/object-assign/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/signal-exit/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/string-width/node_modules/code-point-at/node_modules/number-is-nan/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/string-width/node_modules/code-point-at/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/string-width/node_modules/is-fullwidth-code-point/node_modules/number-is-nan/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/string-width/node_modules/is-fullwidth-code-point/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/string-width/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/strip-ansi/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/wide-align/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/set-blocking/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rc/node_modules/deep-extend/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rc/node_modules/ini/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rc/node_modules/minimist/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rc/node_modules/strip-json-comments/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/aws-sign2/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/aws4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/caseless/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/combined-stream/node_modules/delayed-stream/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/combined-stream/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/extend/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/forever-agent/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/form-data/node_modules/asynckit/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/form-data/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/chalk/node_modules/ansi-styles/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/chalk/node_modules/escape-string-regexp/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/chalk/node_modules/has-ansi/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/chalk/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/chalk/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/chalk/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/commander/node_modules/graceful-readlink/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/commander/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/node_modules/generate-function/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/node_modules/generate-object-property/node_modules/is-property/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/node_modules/generate-object-property/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/node_modules/jsonpointer/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/node_modules/xtend/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/pinkie-promise/node_modules/pinkie/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/pinkie-promise/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/boom/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/cryptiles/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/hoek/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/sntp/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/assert-plus/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/jsprim/node_modules/extsprintf/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/jsprim/node_modules/json-schema/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/jsprim/node_modules/verror/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/jsprim/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/sshpk/node_modules/asn1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/sshpk/node_modules/assert-plus/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/sshpk/node_modules/bcrypt-pbkdf/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/sshpk/node_modules/dashdash/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/sshpk/node_modules/ecc-jsbn/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/sshpk/node_modules/getpass/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/sshpk/node_modules/jodid25519/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/sshpk/node_modules/jsbn/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/sshpk/node_modules/tweetnacl/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/sshpk/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/is-typedarray/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/isstream/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/json-stringify-safe/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/mime-types/node_modules/mime-db/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/mime-types/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/node-uuid/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/oauth-sign/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/qs/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/stringstream/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/tough-cookie/node_modules/punycode/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/tough-cookie/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/tunnel-agent/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/fs.realpath/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/inflight/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/minimatch/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/once/node_modules/wrappy/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/once/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/path-is-absolute/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/semver/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/debug/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream-ignore/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream-ignore/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream-ignore/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream-ignore/node_modules/minimatch/node_modules/brace-expansion/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream-ignore/node_modules/minimatch/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream-ignore/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream/node_modules/graceful-fs/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/once/node_modules/wrappy/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/once/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/node_modules/buffer-shims/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/node_modules/core-util-is/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/node_modules/process-nextick-args/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/node_modules/util-deprecate/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/uid-number/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/node_modules/block-stream/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/node_modules/fstream/node_modules/graceful-fs/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/node_modules/fstream/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/node_modules/node-pre-gyp/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sqlite3/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sshpk/node_modules/assert-plus/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/sshpk/package.json" />
@@ -1830,177 +1481,21 @@
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/xtend/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/y18n/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/lib/node_modules/yallist/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/abbrev-4ebe0b2e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/ajv-de99ab3f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/ansi-regex-0f17b5f7/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/ansi-regex-1f8b9f5e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/aproba-2b1ecbef/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/are-we-there-yet-bd052426/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/asn1-61e3db34/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/assert-plus-14667043/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/assert-plus-3cdba5fb/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/assert-plus-41bdb88c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/assert-plus-52893b77/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/assert-plus-aa8c577c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/assert-plus-f3f5f698/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/asynckit-115f1b3a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/aws-sign2-d911cd21/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/aws4-8401fa22/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/balanced-match-630c0aad/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/bcrypt-pbkdf-4fd7500f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/block-stream-dc45103e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/boom-d9fd1dbd/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/brace-expansion-8b50d461/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/caseless-fde78f9e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/chownr-94125cf9/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/co-ee742def/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/code-point-at-d9145e7f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/combined-stream-abb6e21e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/concat-map-f218538b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/console-control-strings-18306563/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/core-util-is-3ad80385/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/core-util-is-5061386c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/core-util-is-5f64f269/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/cryptiles-c7674e57/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/dashdash-106a2fcc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/debug-e1730b13/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/deep-extend-7ec12dbe/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/delayed-stream-5b87a94f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/delegates-9bd2b01f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/detect-libc-b6f034b3/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/ecc-jsbn-53d2a44b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/extend-bba5565c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/extsprintf-9919228f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/forever-agent-194c80fb/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/form-data-de0062d6/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/fs-minipass-fd5437f0/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/fs.realpath-ad314832/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/fstream-de2df59c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/gauge-25f9382a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/getpass-bbdb4968/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/glob-5b0ee3dc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/graceful-fs-e28b08a4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/har-schema-893bb96b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/har-validator-f64d8467/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/has-unicode-4e4d5767/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/hawk-8ee4c13b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/hoek-10a138ee/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/http-signature-68dc3f17/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/iconv-lite-f615a8b4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/ignore-walk-89eb2441/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/inflight-d4ebde70/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/inherits-0c964a35/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/inherits-48bfe32c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/inherits-7a92318d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/ini-a3727816/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/is-fullwidth-code-point-4ee7f12c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/is-typedarray-e18c4c24/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/isarray-2ca5a099/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/isarray-90c62923/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/isexe-25f13c2c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/isstream-cdb37286/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/jsbn-b94e1ccc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/json-schema-78c0cc5c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/json-stable-stringify-b743380d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/json-stringify-safe-b75b6fef/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/jsonify-064a9691/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/jsprim-0d6f1ba7/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/mime-db-9ae317e1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/mime-types-ce4ed802/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/minimatch-e3597c1d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/minimist-0cfeac2c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/minimist-d5da70a8/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/minipass-571f2247/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/minizlib-8eb46c9b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/mkdirp-60b804b1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/ms-2ee7e449/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/needle-3e81716f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/node-gyp-d134ab37/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/node-pre-gyp-2b446a40/lib/util/nw-pre-gyp/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/node-pre-gyp-2b446a40/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/nopt-3d460800/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/nopt-623ea63e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/npm-bundled-58875bfd/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/npm-packlist-d0ef4eda/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/npmlog-532872aa/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/number-is-nan-d2094940/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/oauth-sign-be79b086/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/object-assign-aab61529/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/once-a70410ef/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/os-homedir-890ccd9b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/os-tmpdir-8ce35cdb/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/osenv-7653701d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/path-is-absolute-a1896585/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/performance-now-ad4db589/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/process-nextick-args-031d8bf8/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/process-nextick-args-f834fa80/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/punycode-39fd8f28/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/qs-c4c6f199/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/rc-a41a89bc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/readable-stream-6fa0c611/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/readable-stream-85e32954/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/request-3860c49a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/rimraf-501221ac/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/safe-buffer-5572e510/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/safe-buffer-56aef09f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/safe-buffer-8a9304a6/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/safer-buffer-fb10ff5f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/sax-794ddd52/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/semver-0eefb94a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/set-blocking-03446389/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/signal-exit-d35afe9c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/sntp-df14eb14/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/sshpk-18f5eac8/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/string-width-a929e5ee/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/string_decoder-250b0aef/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/string_decoder-2d903eec/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/stringstream-9f10593b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/strip-ansi-21c68fe4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/strip-ansi-4ba69fda/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/strip-json-comments-93d0310f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/tar-63bc92c8/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/tar-b6d42f60/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/tough-cookie-93700289/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/tunnel-agent-df74792c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/tweetnacl-474c0583/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/util-deprecate-10d5ade3/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/util-deprecate-33a8b237/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/uuid-21f7c401/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/verror-23c680ae/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/which-2fc5aa0b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/wide-align-5f3298a9/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/wrappy-8302e6bd/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/.staging/yallist-4dbcade8/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/amdefine/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/ansi-styles/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/asap/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/chalk/node_modules/ansi-regex/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/chalk/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/core-util-is/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/duplexer2/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/escape-string-regexp/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/fibers/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/has-ansi/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/isarray/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/meteor-promise/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/multipipe/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/object-assign/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/process-nextick-args/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/promise/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/readable-stream/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/safe-buffer/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/semver/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/source-map-support/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/source-map/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/split2/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/through2/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/underscore/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/util-deprecate/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/server-lib/node_modules/xtend/package.json" />
       <path value="$PROJECT_DIR$/app/package.json" />
     </packageJsonPaths>
   </component>
@@ -2015,7 +1510,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2039,52 +1534,6 @@
               <item name="alohaconnect" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alohaconnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alohaconnect" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="position" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alohaconnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alohaconnect" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="stuff" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alohaconnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alohaconnect" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="startup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alohaconnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alohaconnect" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="startup" type="462c0819:PsiDirectoryNode" />
-              <item name="both" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alohaconnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alohaconnect" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="startup" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alohaconnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alohaconnect" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2101,32 +1550,13 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alohaconnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alohaconnect" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alohaconnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alohaconnect" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alohaconnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alohaconnect" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2161,10 +1591,10 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <frame x="33" y="23" width="1244" height="682" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25285044" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24938676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -2177,11 +1607,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2199,21 +1629,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ListStuff.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2228,9 +1649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2241,32 +1659,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddPosition.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/startup/server/stuff.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddStuff.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="54" column="68" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2274,9 +1673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2284,9 +1680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2301,9 +1694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2311,9 +1701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2321,9 +1708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2331,9 +1715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2341,6 +1722,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/StudentHome.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Landing.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/SignupStudent.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-785">
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -2349,8 +1755,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/CompanyHome.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="64" lean-forward="true" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+        <state relative-caret-position="513">
+          <caret line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddPosition.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/StudentDescription.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ListStuffAdmin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
