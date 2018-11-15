@@ -1,11 +1,15 @@
 import React from 'react';
 import { Positions, PositionSchema } from '/imports/api/position/position';
-import { Grid, Segment, Header, Field } from 'semantic-ui-react';
+import { Grid, Segment, Header } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import HiddenField from 'uniforms-semantic/HiddenField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
+import SelectField from 'uniforms-semantic/SelectField';
+import ListField from 'uniforms-semantic/ListField';
+import NestField from 'uniforms-semantic/NestField';
+import ListItemField from 'uniforms-semantic/ListItemField';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
 
@@ -48,7 +52,9 @@ class AddPosition extends React.Component {
               <Segment>
                 <TextField name='name'/>
                 <TextField name='description'/>
-                <TextField name='requirement'/>
+
+                <TextField Field name="requirement" />
+
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner' value='fakeuser@foo.com'/>
@@ -56,6 +62,7 @@ class AddPosition extends React.Component {
             </AutoForm>
           </Grid.Column>
         </Grid>
+
     );
   }
 }
