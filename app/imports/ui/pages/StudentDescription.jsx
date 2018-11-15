@@ -1,5 +1,5 @@
 import React from 'react';
-import { Positions, PositionSchema } from '/imports/api/position/position';
+import { Profiles, ProfileSchema } from '/imports/api/position/StudentProfile';
 import { Grid, Segment, Header } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
@@ -32,9 +32,9 @@ class StudentDescription extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { name, requirement, description } = data;
+    const { name, education, experience } = data;
     const owner = Meteor.user().username;
-    Positions.insert({ name, requirement, description, owner }, this.insertCallback);
+    Profiles.insert({ name, education, experience, owner }, this.insertCallback);
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
@@ -42,12 +42,12 @@ class StudentDescription extends React.Component {
     return (
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center">Add Position</Header>
+            <Header as="h2" textAlign="center">Student Profile</Header>
             <AutoForm ref={(ref) => { this.formRef = ref; }} schema={PositionSchema} onSubmit={this.submit}>
               <Segment>
                 <TextField name='name'/>
-                <TextField name='requirement' />
-                <TextField name='description'/>
+                <TextField name='education' />
+                <TextField name='experience'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner' value='fakeuser@foo.com'/>
