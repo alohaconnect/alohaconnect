@@ -9,6 +9,7 @@ const Profiles = new Mongo.Collection('Profiles');
 const ProfileSchema = new SimpleSchema({
   name: String,
   education: String,
+  degree: String,
   experience: String,
   owner: String,
 }, { tracker: Tracker });

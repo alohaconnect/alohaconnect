@@ -32,9 +32,9 @@ class StudentDescription extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { name, education, experience } = data;
+    const { name, education, degree, experience } = data;
     const owner = Meteor.user().username;
-    Profiles.insert({ name, education, experience, owner }, this.insertCallback);
+    Profiles.insert({ name, education, degree, experience, owner }, this.insertCallback);
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
@@ -43,10 +43,11 @@ class StudentDescription extends React.Component {
         <Grid container centered>
           <Grid.Column>
             <Header as="h2" textAlign="center">Student Profile</Header>
-            <AutoForm ref={(ref) => { this.formRef = ref; }} schema={PositionSchema} onSubmit={this.submit}>
+            <AutoForm ref={(ref) => { this.formRef = ref; }} schema={ProfileSchema} onSubmit={this.submit}>
               <Segment>
                 <TextField name='name'/>
-                <TextField name='education' />
+                <TextField name='education'/>
+                <TextField name='degree'/>
                 <TextField name='experience'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
