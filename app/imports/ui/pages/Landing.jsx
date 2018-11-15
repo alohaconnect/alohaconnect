@@ -1,22 +1,49 @@
 import React from 'react';
-import { Grid, Image } from 'semantic-ui-react';
+import { Grid, Icon, Header } from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
     return (
-        <Grid verticalAlign='middle' textAlign='center' container>
+        <div className='connect-background'>
+          <Grid container centered columns={3}>
+            <Grid.Row>
+              <Grid.Column textAlign='center' className='landingText'>
+                <Icon size='huge' name='graduation cap' inverted/>
+                <Header as='h1' inverted>Student or Recent Graduate?</Header>
+                <Header as='h3' inverted>Looking for an internship or a job?</Header>
+              </Grid.Column>
+              <Grid.Column textAlign='center' className='landingText'>
+                <Icon size='huge' name='address card' inverted/>
+                <Header as='h1' inverted>Sign Up!</Header>
+                <Header as='h3' inverted>Create a professional listing and highlight your accomplishments!</Header>
+              </Grid.Column>
+              <Grid.Column textAlign='center' className='landingText'>
+                <Icon size='huge' name='handshake' inverted/>
+                <Header as='h1' inverted>Get Connected!</Header>
+                <Header as='h3' inverted>Connect with local companies to kick start your career!</Header>
+              </Grid.Column>
+            </Grid.Row>
 
-          <Grid.Column width={4}>
-            <Image size='small' circular src="/images/meteor-logo.png"/>
-          </Grid.Column>
-
-          <Grid.Column width={8}>
-            <h1>Welcome to this template</h1>
-            <p>Now get to work and modify this app!</p>
-          </Grid.Column>
-
-        </Grid>
+            <Grid.Row>
+              <Grid.Column textAlign='center' className='landingText'>
+                <Icon size='huge' name='building' inverted/>
+                <Header as='h1' inverted>Local Company?</Header>
+                <Header as='h3' inverted>Looking for talented individuals in your area?</Header>
+              </Grid.Column>
+              <Grid.Column textAlign='center' className='landingText'>
+                <Icon size='huge' name='file alternate outline' inverted/>
+                <Header as='h1' inverted>Create a Job Posting!</Header>
+                <Header as='h3' inverted>List your company's job opportunites.</Header>
+              </Grid.Column>
+              <Grid.Column textAlign='center' className='landingText'>
+                <Icon size='huge' name='handshake' inverted/>
+                <Header as='h1' inverted>Get Connected!</Header>
+                <Header as='h3' inverted>Match up with local talent.</Header>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </div>  
     );
   }
 }
