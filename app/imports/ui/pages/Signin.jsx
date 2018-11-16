@@ -8,8 +8,8 @@ import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-rea
  * Signin page overrides the form’s submit event and call Meteor’s loginWithPassword().
  * Authentication errors modify the component’s state to be displayed
  */
-export default class Signin extends React.Component {
 
+export default class Signin extends React.Component {
   /** Initialize component state with properties for login and redirection. */
   constructor(props) {
     super(props);
@@ -18,6 +18,7 @@ export default class Signin extends React.Component {
     // https://medium.freecodecamp.org/react-binding-patterns-5-approaches-for-handling-this-92c651b5af56
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.flag = '';
   }
 
   /** Update the form controls each time the user interacts with them. */
@@ -33,6 +34,9 @@ export default class Signin extends React.Component {
         this.setState({ error: err.reason });
       } else {
         this.setState({ error: '', redirectToReferer: true });
+        if (Meteor.user().profile === 'company') this.flag = 'company';
+        if (Meteor.user().profile === 'student') this.flag = 'student';
+        console.log(this.flag);
       }
     });
   }

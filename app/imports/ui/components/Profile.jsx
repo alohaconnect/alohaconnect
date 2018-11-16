@@ -9,13 +9,13 @@ class Profile extends React.Component {
     return (
         <Card centered>
           <Card.Content>
-            <Card.Header>{this.props.position.name}</Card.Header>
-            <Card.Meta>{this.props.position.education}</Card.Meta>
-            <Card.Meta>{this.props.position.degree}</Card.Meta>
-            <Card.Meta>{this.props.position.experience}</Card.Meta>
+            <Card.Header>{this.props.profile.name}</Card.Header>
+            <Card.Meta>{this.props.profile.education}</Card.Meta>
+            <Card.Meta>{this.props.profile.degree}</Card.Meta>
+            <Card.Meta>{this.props.profile.experience}</Card.Meta>
           </Card.Content>
           <Card.Content extra>
-            <Link to={`/edit/${this.props.position._id}`}>Edit</Link>
+            <Link to={`/edit/${this.props.profile._id}`}>Edit</Link>
           </Card.Content>
         </Card>
     );
