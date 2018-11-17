@@ -4,7 +4,7 @@ import { Container, Card, Header, Loader } from 'semantic-ui-react';
 import { Positions } from '/imports/api/position/position';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import PositionCard from '../components/PositionCard'
+import PositionCard from '../components/PositionCard';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class CompanyHomeCard extends React.Component {

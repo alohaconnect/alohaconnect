@@ -12,5 +12,8 @@
   ],
   "defaultPosition":[
     {"name": "computer science", "requirement": "java", "description": "Demo", "owner":"company"}
+  ],
+  "defaultStudentProfile":[
+    {"name": "default student", "edcation": "phd", "degree": "CENG", "experience":"none", "owner":"student"}
   ]
 }
