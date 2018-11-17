@@ -1,4 +1,5 @@
 import { Meteor } from 'meteor/meteor';
+import { Roles } from 'meteor/alanning:roles';
 import { Positions } from '../../api/position/position.js';
 
 /** Initialize the database with a default data document. */
@@ -25,3 +26,9 @@ Meteor.publish('Position', function publish() {
 });
 
 // need to add admin position
+Meteor.publish('PositionAdmin', function publish() {
+  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
+    return Positions.find();
+  }
+  return this.ready();
+});

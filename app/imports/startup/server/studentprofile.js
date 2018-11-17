@@ -1,4 +1,5 @@
 import { Meteor } from 'meteor/meteor';
+import { Roles } from 'meteor/alanning:roles';
 import { Profiles } from '/imports/api/position/StudentProfile.js';
 
 /** Initialize the database with a default data document. */
@@ -24,4 +25,10 @@ Meteor.publish('Profile', function publish() {
   return this.ready();
 });
 
-// need to add admin position
+// need to add admin profile
+Meteor.publish('ProfileAdmin', function publish() {
+  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
+    return Profiles.find();
+  }
+  return this.ready();
+});
