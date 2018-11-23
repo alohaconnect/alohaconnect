@@ -9,16 +9,23 @@ import { Roles } from 'meteor/alanning:roles';
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
   render() {
-    const menuStyle = { marginBottom: '10px',  marginBottom: '0' };
+    const menuStyle = { marginBottom: '0px' };
     return (
       <Menu style={menuStyle} attached="top" borderless inverted>
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
           <Header inverted as='h1'>Aloha Connect</Header>
         </Menu.Item>
-        {this.props.currentUser ? (
-            [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List Stuff</Menu.Item>]
+
+        {(this.props.profile === 'student') ? (
+            [<Menu.Item as={NavLink} activeClassName="active" exact to="/studentadd" key='studnetadd'>Add ...</Menu.Item>,
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/studenthome" key='studenthome'>Home Page</Menu.Item>]
         ) : ''}
+
+        {(this.props.profile === 'company') ? (
+            [<Menu.Item as={NavLink} activeClassName="active" exact to="/companyadd" key='companyadd'>Add ...</Menu.Item>,
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/companyhome" key='companyhome'>Home Page</Menu.Item>]
+        ) : ''}
+
         {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
             <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
         ) : ''}
@@ -47,11 +54,13 @@ class NavBar extends React.Component {
 /** Declare the types of all properties. */
 NavBar.propTypes = {
   currentUser: PropTypes.string,
+  profile: PropTypes.string,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 const NavBarContainer = withTracker(() => ({
   currentUser: Meteor.user() ? Meteor.user().username : '',
+  profile: Meteor.user() ? Meteor.user().profile : '',
 }))(NavBar);
 
 /** Enable ReactRouter for this component. https://reacttraining.com/react-router/web/api/withRouter */

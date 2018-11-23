@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
 
+
 /**
  * Signup component is similar to signin component, but we attempt to create a new user instead.
  */
@@ -24,14 +25,15 @@ export default class Signup extends React.Component {
 
   /** Handle Signup submission using Meteor's account mechanism. */
   handleSubmit() {
-    const { email, password, accountType } = this.state;
-    Accounts.createUser({ email, username: email, password, accountType}, (err) => {
+    const { email, password} = this.state;
+    Accounts.createUser({ email, username: email, password, profile: 'company'}, (err) => {
       if (err) {
         this.setState({ error: err.reason });
       } else {
         // browserHistory.push('/login');
       }
     });
+
   }
 
   /** Display the signup form. */

@@ -16,11 +16,12 @@ import Signin from '../pages/Signin';
 import SignupStudent from '../pages/SignupStudent';
 import SignupCompany from '../pages/SignupCompany';
 import Signout from '../pages/Signout';
-import CompanyHome from '../pages/CompanyHome';
 import CompanyHomeCard from '../pages/CompanyHomeCard';
 import AddPosition from '../pages/AddPosition';
 import StudentHome from '../pages/StudentHome';
 import StudentDescription from '../pages/StudentDescription';
+import AdminHome from '../pages/AdminHome';
+
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
   render() {
@@ -33,10 +34,12 @@ class App extends React.Component {
               <Route path="/signin" component={Signin}/>
               <Route path="/signupstudent" component={SignupStudent}/>
               <Route path="/signupcompany" component={SignupCompany}/>
-              <ProtectedRoute path="/list" component={StudentHome}/>
-              <ProtectedRoute path="/add" component={StudentDescription}/>
+              <ProtectedRoute path="/studenthome" component={StudentHome}/>
+              <ProtectedRoute path="/companyhome" component={CompanyHomeCard}/>
+              <ProtectedRoute path="/studentadd" component={StudentDescription}/>
+              <ProtectedRoute path="/companyadd" component={AddPosition}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
-              <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
+              <AdminProtectedRoute path="/admin" component={AdminHome}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>
