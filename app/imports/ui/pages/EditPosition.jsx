@@ -1,7 +1,6 @@
 import React from 'react';
 import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
-import { Stuffs, StuffSchema } from '/imports/api/stuff/stuff';
-import { Bert } from 'meteor/themeteorchef:bert';
+import { Positions, PositionSchema } from '/imports/api/position/position';import { Bert } from 'meteor/themeteorchef:bert';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import NumField from 'uniforms-semantic/NumField';
@@ -19,7 +18,7 @@ class EditPosition extends React.Component {
   /** On successful submit, insert the data. */
   submit(data) {
     const { name, quantity, condition, _id } = data;
-    Stuffs.update(_id, { $set: { name, quantity, condition } }, (error) => (error ?
+    Positions.update(_id, { $set: { name, quantity, condition } }, (error) => (error ?
         Bert.alert({ type: 'danger', message: `Update failed: ${error.message}` }) :
         Bert.alert({ type: 'success', message: 'Update succeeded' })));
   }
@@ -67,7 +66,7 @@ export default withTracker(({ match }) => {
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('Stuff');
   return {
-    doc: Stuffs.findOne(documentId),
+    doc: Positions.findOne(documentId),
     ready: subscription.ready(),
   };
-})(EditStuff);
+})(EditPosition);

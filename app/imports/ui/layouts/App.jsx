@@ -18,6 +18,7 @@ import SignupCompany from '../pages/SignupCompany';
 import Signout from '../pages/Signout';
 import CompanyHomeCard from '../pages/CompanyHomeCard';
 import AddPosition from '../pages/AddPosition';
+import EditPosition from '../pages/EditPosition';
 import StudentHome from '../pages/StudentHome';
 import StudentDescription from '../pages/StudentDescription';
 import AdminHome from '../pages/AdminHome';
@@ -38,7 +39,7 @@ class App extends React.Component {
               <ProtectedRoute path="/companyhome" component={CompanyHomeCard}/>
               <ProtectedRoute path="/studentadd" component={StudentDescription}/>
               <ProtectedRoute path="/companyadd" component={AddPosition}/>
-              <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
+              <ProtectedRoute path="/edit/:_id" component={EditPosition}/>
               <AdminProtectedRoute path="/admin" component={AdminHome}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
