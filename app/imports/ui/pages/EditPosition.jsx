@@ -17,8 +17,8 @@ class EditPosition extends React.Component {
 
   /** On successful submit, insert the data. */
   submit(data) {
-    const { name, quantity, condition, _id } = data;
-    Positions.update(_id, { $set: { name, quantity, condition } }, (error) => (error ?
+    const { name, requirement, description, _id } = data;
+    Positions.update(_id, { $set: { name, requirement, description } }, (error) => (error ?
         Bert.alert({ type: 'danger', message: `Update failed: ${error.message}` }) :
         Bert.alert({ type: 'success', message: 'Update succeeded' })));
   }
@@ -34,13 +34,12 @@ class EditPosition extends React.Component {
         <Grid container centered>
           <Grid.Column>
             <Header as="h2" textAlign="center">Edit Position</Header>
-            <AutoForm ref={(ref) => { this.formRef = ref; }} schema={PositionSchema} onSubmit={this.submit}>
+            {/*<AutoForm ref={(ref) => { this.formRef = ref; }} schema={PositionSchema} onSubmit={this.submit}>*/}
+            <AutoForm schema={PositionSchema} onSubmit={this.submit} model={this.props.doc}>
               <Segment>
                 <TextField name='name'/>
                 <TextField name='description'/>
-
                 <TextField Field name="requirement" />
-
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner' value='fakeuser@foo.com'/>
@@ -52,7 +51,7 @@ class EditPosition extends React.Component {
   }
 }
 
-/** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
+/** Require the presence of a Position document in the props object. Uniforms adds 'model' to the props, which we use. */
 EditPosition.propTypes = {
   doc: PropTypes.object,
   model: PropTypes.object,
@@ -63,8 +62,8 @@ EditPosition.propTypes = {
 export default withTracker(({ match }) => {
   // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
   const documentId = match.params._id;
-  // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('Stuff');
+  // Get access to Position documents.
+  const subscription = Meteor.subscribe('Position');
   return {
     doc: Positions.findOne(documentId),
     ready: subscription.ready(),
