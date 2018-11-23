@@ -1,13 +1,18 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Card, Header, Loader } from 'semantic-ui-react';
+import { Stuffs } from '/imports/api/stuff/stuff';
 import { Positions } from '/imports/api/position/position';
+import { Profiles } from '/imports/api/position/StudentProfile';
+import StuffItemAdmin from '/imports/ui/components/StuffItemAdmin';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import PositionCard from '../components/PositionCard';
+import Profile from '../components/Profile';
+import PositionCardAdmin from '../components/PositionCardAdmin';
+import ProfileAdmin from '../components/ProfileAdmin';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
-class CompanyHomeCard extends React.Component {
+class AdminHome extends React.Component {
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
@@ -18,17 +23,23 @@ class CompanyHomeCard extends React.Component {
   renderPage() {
     return (
         <Container>
-          <Header as="h2" textAlign="center">Company Home Page</Header>
+          <Header as="h2" textAlign="center">Company Positions</Header>
           <Card.Group>
-            {this.props.positions.map((position, index)=> <PositionCard key={index} position={position}/>)}
+            {this.props.positions.map((position, index)=> <PositionCardAdmin key={index} position={position}/>)}
           </Card.Group>
+          <br></br>
+        <Header as="h2" textAlign="center">Student Profiles</Header>
+        <Card.Group>
+          {this.props.profiles.map((profile, index)=> <ProfileAdmin key={index} profile={profile}/>)}
+        </Card.Group>
         </Container>
     );
   }
 }
 
 /** Require an array of Stuff documents in the props. */
-CompanyHomeCard.propTypes = {
+AdminHome.propTypes = {
+  profiles: PropTypes.array.isRequired,
   positions: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
@@ -36,9 +47,11 @@ CompanyHomeCard.propTypes = {
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('Position');
+  const subscription = Meteor.subscribe('ProfileAdmin');
+  const subscription2 = Meteor.subscribe('PositionAdmin');
   return {
+    profiles: Profiles.find({}).fetch(),
     positions: Positions.find({}).fetch(),
-    ready: subscription.ready(),
+    ready: (subscription.ready() && subscription2.ready()),
   };
-})(CompanyHomeCard);
+})(AdminHome);
