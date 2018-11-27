@@ -23,6 +23,7 @@ class NavBar extends React.Component {
 
         {(this.props.profile === 'company') ? (
             [<Menu.Item as={NavLink} activeClassName="active" exact to="/companyadd" key='companyadd'>Add ...</Menu.Item>,
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/liststudent" key='liststudent'>Find Applicants</Menu.Item>,
               <Menu.Item as={NavLink} activeClassName="active" exact to="/companyhome" key='companyhome'>Home Page</Menu.Item>]
         ) : ''}
 

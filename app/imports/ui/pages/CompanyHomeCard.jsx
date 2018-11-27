@@ -17,12 +17,14 @@ class CompanyHomeCard extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container>
-          <Header as="h2" textAlign="center">Company Home Page</Header>
-          <Card.Group>
-            {this.props.positions.map((position, index)=> <PositionCard key={index} position={position}/>)}
-          </Card.Group>
-        </Container>
+        <div className='companybackground'>
+          <Container>
+            <Header as="h2" textAlign="center">Company Home Page</Header>
+            <Card.Group>
+              {this.props.positions.map((position, index) => <PositionCard key={index} position={position}/>)}
+            </Card.Group>
+          </Container>
+        </div>
     );
   }
 }

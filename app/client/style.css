@@ -27,7 +27,7 @@
 }
 
 .companybackground {
-  background: url('/images/companybg.jpg') no-repeat center center fixed;
+  background: url('/images/companybg.png') no-repeat center center fixed;
   background-size: cover;
   height: 400px;
   display: flex;
