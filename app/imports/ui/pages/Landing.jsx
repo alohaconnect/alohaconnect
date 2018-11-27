@@ -1,47 +1,100 @@
 import React from 'react';
-import { Grid, Icon, Header } from 'semantic-ui-react';
+import { Link, Redirect } from 'react-router-dom';
+import { Meteor } from 'meteor/meteor';
+import { Grid, Icon, Header, Form, Message, Segment, Image } from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
+
+   /** Initialize component state with properties for login and redirection. */
+   constructor(props) {
+    super(props);
+    this.state = { email: '', password: '', error: '', redirectToReferer: false };
+    // Ensure that 'this' is bound to this component in these two functions.
+    // https://medium.freecodecamp.org/react-binding-patterns-5-approaches-for-handling-this-92c651b5af56
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.flag = '';
+  }
+
+  /** Update the form controls each time the user interacts with them. */
+  handleChange(e, { name, value }) {
+    this.setState({ [name]: value });
+  }
+
+  /** Handle Signin submission using Meteor's account mechanism. */
+  handleSubmit() {
+    const { email, password } = this.state;
+    Meteor.loginWithPassword(email, password, (err) => {
+      if (err) {
+        this.setState({ error: err.reason });
+      } else {
+        this.setState({ error: '', redirectToReferer: true });
+        if (Meteor.user().profile === 'company') this.flag = 'company';
+        if (Meteor.user().profile === 'student') this.flag = 'student';
+        console.log(this.flag);
+      }
+    });
+  }
+
   render() {
+    const text = {textAlign: 'center', fontSize: '18px'};
+    const links = {textAlign: 'center'};
+    const { from } = this.props.location.state || { from: { pathname: '/studenthome' } };
+    // if correct authentication, redirect to page instead of login screen
+    if (this.state.redirectToReferer) {
+      return <Redirect to={from}/>;
+    }
     return (
         <div className='connect-background'>
-          <Grid container centered columns={3}>
-            <Grid.Row>
-              <Grid.Column textAlign='center' className='landingText'>
-                <Icon size='huge' name='graduation cap' inverted/>
-                <Header as='h1' inverted>Student or Recent Graduate?</Header>
-                <Header as='h3' inverted>Looking for an internship or a job?</Header>
-              </Grid.Column>
-              <Grid.Column textAlign='center' className='landingText'>
-                <Icon size='huge' name='address card' inverted/>
-                <Header as='h1' inverted>Sign Up!</Header>
-                <Header as='h3' inverted>Create a professional listing and highlight your accomplishments!</Header>
-              </Grid.Column>
-              <Grid.Column textAlign='center' className='landingText'>
-                <Icon size='huge' name='handshake' inverted/>
-                <Header as='h1' inverted>Get Connected!</Header>
-                <Header as='h3' inverted>Connect with local companies to kick start your career!</Header>
-              </Grid.Column>
-            </Grid.Row>
-
-            <Grid.Row>
-              <Grid.Column textAlign='center' className='landingText'>
-                <Icon size='huge' name='building' inverted/>
-                <Header as='h1' inverted>Local Company?</Header>
-                <Header as='h3' inverted>Looking for talented individuals in your area?</Header>
-              </Grid.Column>
-              <Grid.Column textAlign='center' className='landingText'>
-                <Icon size='huge' name='file alternate outline' inverted/>
-                <Header as='h1' inverted>Create a Job Posting!</Header>
-                <Header as='h3' inverted>List your company's job opportunites.</Header>
-              </Grid.Column>
-              <Grid.Column textAlign='center' className='landingText'>
-                <Icon size='huge' name='handshake' inverted/>
-                <Header as='h1' inverted>Get Connected!</Header>
-                <Header as='h3' inverted>Match up with local talent.</Header>
-              </Grid.Column>
-            </Grid.Row>
+          <Grid textAlign="center" verticalAlign="middle" centered columns={1}>
+            <Grid.Column>
+              <Image src='/images/AlohaConnectLogo.png' size='large'/>
+              <Form onSubmit={this.handleSubmit}>
+                <Segment stacked>
+                  <div style={text}>
+                    Login to continue your journey!
+                  </div>
+                  <Form.Input
+                      label="Email"
+                      icon="user"
+                      iconPosition="left"
+                      name="email"
+                      type="email"
+                      placeholder="E-mail address"
+                      onChange={this.handleChange}
+                  />
+                  <Form.Input
+                      label="Password"
+                      icon="lock"
+                      iconPosition="left"
+                      name="password"
+                      placeholder="Password"
+                      type="password"
+                      onChange={this.handleChange}
+                  />
+                  <Form.Button content="Submit"/>
+                  <div style={text}>
+                    Don't have an account?
+                  </div>
+                  <Message style={links}>
+                    <Link to="/signupstudent">Click here to Register as a Student</Link>
+                  </Message>
+                  <Message style={links}>
+                    <Link to="/signupcompany">Click here to Register as a Company</Link>
+                  </Message>
+                </Segment>
+              </Form>
+              {this.state.error === '' ? (
+                  ''
+              ) : (
+                  <Message
+                      error
+                      header="Login was not successful"
+                      content={this.state.error}
+                  />
+              )}
+            </Grid.Column>
           </Grid>
         </div>  
     );
