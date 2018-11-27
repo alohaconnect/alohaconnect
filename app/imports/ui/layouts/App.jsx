@@ -16,7 +16,7 @@ import Signin from '../pages/Signin';
 import SignupStudent from '../pages/SignupStudent';
 import SignupCompany from '../pages/SignupCompany';
 import Signout from '../pages/Signout';
-import CompanyHomeCard from '../pages/CompanyHomeCard';
+import CompanyHome from '../pages/CompanyHome';
 import AddPosition from '../pages/AddPosition';
 import EditPosition from '../pages/EditPosition';
 import StudentHome from '../pages/StudentHome';
@@ -36,7 +36,7 @@ class App extends React.Component {
               <Route path="/signupstudent" component={SignupStudent}/>
               <Route path="/signupcompany" component={SignupCompany}/>
               <ProtectedRoute path="/studenthome" component={StudentHome}/>
-              <ProtectedRoute path="/companyhome" component={CompanyHomeCard}/>
+              <ProtectedRoute path="/companyhome" component={CompanyHome}/>
               <ProtectedRoute path="/studentadd" component={StudentDescription}/>
               <ProtectedRoute path="/liststudent" component={ListStudent}/>
               <ProtectedRoute path="/companyadd" component={AddPosition}/>
