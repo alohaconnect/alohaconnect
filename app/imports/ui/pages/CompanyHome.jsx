@@ -17,22 +17,24 @@ class CompanyHome extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container>
-          <Header as="h2" textAlign="center">Company Home Page</Header>
-          <Table celled>
-            <Table.Header>
-              <Table.Row>
-                <Table.HeaderCell>Position</Table.HeaderCell>
-                <Table.HeaderCell>Requirement</Table.HeaderCell>
-                <Table.HeaderCell>Description</Table.HeaderCell>
-                <Table.HeaderCell>Edit</Table.HeaderCell>
-              </Table.Row>
-            </Table.Header>
-            <Table.Body>
-              {this.props.positions.map((position) => <PositionItem key={position._id} position={position} />)}
-            </Table.Body>
-          </Table>
-        </Container>
+        <div className='companybackground'>
+          <Container>
+            <Header as="h2" textAlign="center">Company Home Page</Header>
+            <Table celled>
+              <Table.Header>
+                <Table.Row>
+                  <Table.HeaderCell>Position</Table.HeaderCell>
+                  <Table.HeaderCell>Requirement</Table.HeaderCell>
+                  <Table.HeaderCell>Description</Table.HeaderCell>
+                  <Table.HeaderCell>Edit</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
+              <Table.Body>
+                {this.props.positions.map((position) => <PositionItem key={position._id} position={position}/>)}
+              </Table.Body>
+            </Table>
+          </Container>
+        </div>
     );
   }
 }

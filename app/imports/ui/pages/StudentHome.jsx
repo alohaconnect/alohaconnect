@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Card, Header, Loader } from 'semantic-ui-react';
-import { Profiles } from '/imports/api/position/StudentProfile';
+import { Profiles } from '/imports/api/profile/StudentProfile';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import Profile from '../components/Profile';
@@ -17,12 +17,14 @@ class StudentHome extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container>
-          <Header as="h2" textAlign="center">Student Home Page</Header>
-          <Card.Group>
-            {this.props.profiles.map((profile, index)=> <Profile key={index} profile={profile}/>)}
-          </Card.Group>
-        </Container>
+        <div className='studentbackground'>
+          <Container>
+            <Header as="h2" textAlign="center">Student Home Page</Header>
+            <Card.Group>
+              {this.props.profiles.map((profile, index) => <Profile key={index} profile={profile}/>)}
+            </Card.Group>
+          </Container>
+        </div>
     );
   }
 }

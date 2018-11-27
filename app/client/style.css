@@ -13,6 +13,32 @@
     flex-wrap: wrap;
 }
 
+.studentbackground {
+  background: url('/images/studentbg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* height: 100%; */
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.companybackground {
+  background: url('/images/companybg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* height: 100%; */
+  position: relative;
+  flex-wrap: wrap;
+}
+
 .landingText {
     display: flex;
     justify-content: center;

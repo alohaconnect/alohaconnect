@@ -1,5 +1,5 @@
 import React from 'react';
-import { Profiles, ProfileSchema } from '/imports/api/position/StudentProfile';
+import { Profiles, ProfileSchema } from '/imports/api/profile/StudentProfile';
 import { Grid, Segment, Header } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
