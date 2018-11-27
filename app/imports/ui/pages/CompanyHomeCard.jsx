@@ -20,7 +20,7 @@ class CompanyHomeCard extends React.Component {
         <Container>
           <Header as="h2" textAlign="center">Company Home Page</Header>
           <Card.Group>
-            {this.props.positions.map((position, index)=> <PositionCard key={index} position={position}/>)}
+            {this.props.positions.map((position, index)=> <PositionCard key={index} position={position} type={position.type}/>)}
           </Card.Group>
         </Container>
     );

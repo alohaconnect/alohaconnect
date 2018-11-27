@@ -1,12 +1,17 @@
 import React from 'react';
 import { Card } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
+import { Meteor } from 'meteor/meteor';
+import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, Link } from 'react-router-dom';
+
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class PositionCard extends React.Component {
+
   render() {
     return (
+
         <Card centered>
           <Card.Content>
             <Card.Header>{this.props.position.name}</Card.Header>
@@ -16,7 +21,7 @@ class PositionCard extends React.Component {
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
-            <Link to={`/edit/${this.props.position._id}`}>Edit</Link>
+            <Link to={`/editPosition/${this.props.position._id}`}>Edit</Link>
           </Card.Content>
         </Card>
     );

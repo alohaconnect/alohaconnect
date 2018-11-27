@@ -15,7 +15,7 @@ class Profile extends React.Component {
             <Card.Meta>{this.props.profile.experience}</Card.Meta>
           </Card.Content>
           <Card.Content extra>
-            <Link to={`/edit/${this.props.profile._id}`}>Edit</Link>
+            <Link to={`/editProfile/${this.props.profile._id}`}>Edit</Link>
           </Card.Content>
         </Card>
     );

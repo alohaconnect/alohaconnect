@@ -7,7 +7,7 @@ import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
-import EditStuff from '../pages/EditStuff';
+import EditPosition from '../pages/EditPosition';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import SignupStudent from '../pages/SignupStudent';
@@ -18,9 +18,13 @@ import AddPositionCard from '../pages/AddPositionCard';
 import StudentHome from '../pages/StudentHome';
 import StudentDescription from '../pages/StudentDescription';
 import AdminHome from '../pages/AdminHome';
+import EditProfile from '../pages/EditProfile';
+
+
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
+
   render() {
     return (
         <Router>
@@ -35,7 +39,8 @@ class App extends React.Component {
               <ProtectedRoute path="/companyhome" component={CompanyHomeCard}/>
               <ProtectedRoute path="/studentadd" component={StudentDescription}/>
               <ProtectedRoute path="/companyadd" component={AddPositionCard}/>
-              <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
+              <ProtectedRoute path="/editPosition/:_id/" component={EditPosition}/>
+              <ProtectedRoute path="/editProfile/:_id/" component={EditProfile}/>
               <AdminProtectedRoute path="/admin" component={AdminHome}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
@@ -95,5 +100,6 @@ AdminProtectedRoute.propTypes = {
   component: PropTypes.func.isRequired,
   location: PropTypes.object,
 };
+
 
 export default App;
