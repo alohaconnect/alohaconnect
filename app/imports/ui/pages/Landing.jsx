@@ -29,10 +29,9 @@ class Landing extends React.Component {
       if (err) {
         this.setState({ error: err.reason });
       } else {
-        this.setState({ error: '', redirectToReferer: true });
         if (Meteor.user().profile === 'company') this.flag = 'company';
         if (Meteor.user().profile === 'student') this.flag = 'student';
-        console.log(this.flag);
+        this.setState({ error: '', redirectToReferer: true });
       }
     });
   }
@@ -40,9 +39,10 @@ class Landing extends React.Component {
   render() {
     const text = {textAlign: 'center', fontSize: '18px'};
     const links = {textAlign: 'center'};
-    const { from } = this.props.location.state || { from: { pathname: '/studenthome' } };
+    const { from } = this.props.location.state || { from: { pathname: `/${this.flag}home` } };
     // if correct authentication, redirect to page instead of login screen
     if (this.state.redirectToReferer) {
+      console.log(this.flag);
       return <Redirect to={from}/>;
     }
     return (
