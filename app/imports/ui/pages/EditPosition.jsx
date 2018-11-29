@@ -31,6 +31,7 @@ class EditPosition extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
     return (
+      <div className="companybackground">
         <Grid container centered>
           <Grid.Column>
             <Header as="h2" textAlign="center">Edit Position</Header>
@@ -47,6 +48,7 @@ class EditPosition extends React.Component {
             </AutoForm>
           </Grid.Column>
         </Grid>
+      </div>
     );
   }
 }

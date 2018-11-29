@@ -1,6 +1,6 @@
 import React from 'react';
 import { Positions, PositionSchema } from '/imports/api/position/position';
-import { Grid, Segment, Header } from 'semantic-ui-react';
+import { Grid, Segment, Header, Divider } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import SubmitField from 'uniforms-semantic/SubmitField';
@@ -45,16 +45,16 @@ class AddPosition extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
     return (
+      <div className="companybackground">
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center">Add Position</Header>
             <AutoForm ref={(ref) => { this.formRef = ref; }} schema={PositionSchema} onSubmit={this.submit}>
               <Segment>
+                <Header as="h2" textAlign="center">Add Position</Header>
+                <Divider />
                 <TextField name='name'/>
                 <TextField name='description'/>
-
                 <TextField Field name="requirement" />
-
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner' value='fakeuser@foo.com'/>
@@ -62,7 +62,7 @@ class AddPosition extends React.Component {
             </AutoForm>
           </Grid.Column>
         </Grid>
-
+      </div>
     );
   }
 }

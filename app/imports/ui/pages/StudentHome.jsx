@@ -19,7 +19,7 @@ class StudentHome extends React.Component {
     return (
         <div className='studentbackground'>
           <Container>
-            <Header as="h2" textAlign="center">Student Home Page</Header>
+            <Header as="h2" textAlign="center" inverted>Student Home Page</Header>
             <Card.Group>
               {this.props.profiles.map((profile, index) => <Profile key={index} profile={profile}/>)}
             </Card.Group>
