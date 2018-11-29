@@ -41,8 +41,8 @@ export default class Signup extends React.Component {
         <Container>
           <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
             <Grid.Column>
-              <Header as="h2" textAlign="center">
-                Register as a student
+              <Header as="h2" textAlign="center" inverted>
+                Register as a Student
               </Header>
               <Form onSubmit={this.handleSubmit}>
                 <Segment stacked>

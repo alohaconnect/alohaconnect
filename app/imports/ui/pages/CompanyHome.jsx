@@ -20,7 +20,7 @@ class CompanyHome extends React.Component {
       <div className="companybackground">
         <Container>
           <Segment>
-            <Header as="h2" textAlign="center">Student Home Page</Header>
+            <Header as="h2" textAlign="center">Company Home Page</Header>
             <Divider/>
             <Grid container centered columns={3}>
               <Grid.Row>
