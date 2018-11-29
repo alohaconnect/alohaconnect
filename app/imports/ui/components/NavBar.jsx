@@ -10,9 +10,12 @@ import { Roles } from 'meteor/alanning:roles';
 class NavBar extends React.Component {
   render() {
     const menuStyle = { marginBottom: '0px' };
+    if(this.props.profile === 'student') this.navLink = "/studenthome";
+    else if(this.props.profile === 'company') this.navLink = "/companyhome";
+    else this.navLink = "/";
     return (
       <Menu style={menuStyle} attached="top" borderless inverted>
-        <Menu.Item as={NavLink} activeClassName="" exact to="/">
+        <Menu.Item as={NavLink} activeClassName="" exact to={this.navLink}>
           <Image src='/images/AlohaConnectLogo.png' size='small'/> 
         </Menu.Item>
 
