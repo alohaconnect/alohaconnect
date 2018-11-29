@@ -3,32 +3,42 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
-import { Menu, Dropdown, Header, Image } from 'semantic-ui-react';
+import { Menu, Dropdown, Image } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
   render() {
     const menuStyle = { marginBottom: '0px' };
-    if (this.props.profile === 'student') this.navLink = "/studenthome";
-    else if (this.props.profile === 'company') this.navLink = "/companyhome";
-    else if (Roles.userIsInRole(Meteor.userId(), 'admin')) this.navLink = "/admin";
-    else this.navLink = "/";
+    if (this.props.profile === 'student') this.navLink = '/studenthome';
+    else if (this.props.profile === 'company') this.navLink = '/companyhome';
+    else if (Roles.userIsInRole(Meteor.userId(), 'admin')) this.navLink = '/admin';
+    else this.navLink = '/';
     return (
       <Menu style={menuStyle} attached="top" borderless inverted>
         <Menu.Item as={NavLink} activeClassName="" exact to={this.navLink}>
-          <Image src='/images/AlohaConnectLogo.png' size='small'/> 
+          <Image src='/images/AlohaConnectLogo.png' size='small'/>
         </Menu.Item>
 
         {(this.props.profile === 'student') ? (
-            [<Menu.Item as={NavLink} activeClassName="active" exact to="/studentadd" key='studentadd'>Add Profile</Menu.Item>,
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/studenthome" key='studenthome'>Home Page</Menu.Item>]
+            [<Menu.Item as={NavLink} activeClassName="active" exact to="/studentadd" key='studentadd'>
+              Add Profile
+            </Menu.Item>,
+            <Menu.Item as={NavLink} activeClassName="active" exact to="/studenthome" key='studenthome'>
+              Home Page
+            </Menu.Item>]
         ) : ''}
 
         {(this.props.profile === 'company') ? (
-              [<Menu.Item as={NavLink} activeClassName="active" exact to="/companyadd" key='companyadd'>Add Position</Menu.Item>,
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/liststudent" key='liststudent'>Find Applicants</Menu.Item>,
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/companyhome" key='companyhome'>Home Page</Menu.Item>]
+              [<Menu.Item as={NavLink} activeClassName="active" exact to="/companyadd" key='companyadd'>
+                Add Position
+              </Menu.Item>,
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/liststudent" key='liststudent'>
+                Find Applicants
+              </Menu.Item>,
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/companyhome" key='companyhome'>
+                Home Page
+              </Menu.Item>]
         ) : ''}
 
         {Roles.userIsInRole(Meteor.userId(), 'admin') ? (

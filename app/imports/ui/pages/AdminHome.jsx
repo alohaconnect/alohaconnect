@@ -1,13 +1,10 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Card, Header, Loader } from 'semantic-ui-react';
-import { Stuffs } from '/imports/api/stuff/stuff';
 import { Positions } from '/imports/api/position/position';
 import { Profiles } from '/imports/api/profile/StudentProfile';
-import StuffItemAdmin from '/imports/ui/components/StuffItemAdmin';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import Profile from '../components/Profile';
 import PositionCardAdmin from '../components/PositionCardAdmin';
 import ProfileAdmin from '../components/ProfileAdmin';
 
@@ -26,12 +23,12 @@ class AdminHome extends React.Component {
         <Container>
           <Header as="h2" textAlign="center" inverted>Company Positions</Header>
           <Card.Group>
-            {this.props.positions.map((position, index)=> <PositionCardAdmin key={index} position={position}/>)}
+            {this.props.positions.map((position, index) => <PositionCardAdmin key={index} position={position}/>)}
           </Card.Group>
-          <br></br>
+          <br/>
           <Header as="h2" textAlign="center" inverted>Student Profiles</Header>
           <Card.Group>
-            {this.props.profiles.map((profile, index)=> <ProfileAdmin key={index} profile={profile}/>)}
+            {this.props.profiles.map((profile, index) => <ProfileAdmin key={index} profile={profile}/>)}
           </Card.Group>
         </Container>
       </div>
