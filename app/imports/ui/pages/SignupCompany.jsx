@@ -39,6 +39,7 @@ export default class Signup extends React.Component {
   /** Display the signup form. */
   render() {
     return (
+      <div className="companybackground">
         <Container>
           <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
             <Grid.Column>
@@ -83,6 +84,7 @@ export default class Signup extends React.Component {
             </Grid.Column>
           </Grid>
         </Container>
+      </div>
     );
   }
 }
