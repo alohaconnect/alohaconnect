@@ -19,7 +19,7 @@ class CompanyHome extends React.Component {
     return (
         <div className='companybackground'>
           <Container>
-            <Header as="h2" textAlign="center">Company Home Page</Header>
+            <Header as="h2" textAlign="center" inverted>Company Home Page</Header>
             <Table celled>
               <Table.Header>
                 <Table.Row>
