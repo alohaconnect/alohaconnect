@@ -44,11 +44,11 @@ class AddPosition extends React.Component {
         <div className="companybackground">
           <Grid container centered>
             <Grid.Column>
-              <Header as="h2" textAlign="center" inverted>Add Position</Header>
               <AutoForm ref={(ref) => {
                 this.formRef = ref;
               }} schema={PositionSchema} onSubmit={this.submit}>
                 <Segment style={transparent} inverted>
+                  <Header as="h2" textAlign="center" inverted>Add Position</Header>
                   <TextField name='name'/>
                   <TextField name='description'/>
 

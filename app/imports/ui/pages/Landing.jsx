@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
+import { Roles } from 'meteor/alanning:roles';
 import { Grid, Icon, Header, Form, Message, Segment, Image } from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
@@ -31,6 +32,7 @@ class Landing extends React.Component {
       } else {
         if (Meteor.user().profile === 'company') this.flag = 'company';
         if (Meteor.user().profile === 'student') this.flag = 'student';
+        if (Roles.userIsInRole(Meteor.userId(), 'admin')) this.flag = 'admin';
         this.setState({ error: '', redirectToReferer: true });
       }
     });

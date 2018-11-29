@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Card, Header, Loader } from 'semantic-ui-react';
+import { Container, Card, Header, Loader, Grid, Icon, Segment, Divider } from 'semantic-ui-react';
 import { Profiles } from '/imports/api/profile/StudentProfile';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
@@ -18,12 +18,29 @@ class StudentHome extends React.Component {
   renderPage() {
     return (
         <div className='studentbackground'>
-          <Container>
-            <Header as="h2" textAlign="center" inverted>Student Home Page</Header>
-            <Card.Group>
-              {this.props.profiles.map((profile, index) => <Profile key={index} profile={profile}/>)}
-            </Card.Group>
-          </Container>
+          <Segment>
+            <Header as="h2" textAlign="center">Student Home Page</Header>
+            <Divider/>
+            <Grid container centered columns={3}>
+              <Grid.Row>
+                <Grid.Column textAlign='center' className='landingText'>
+                  <Icon size='huge' name='graduation cap'/>
+                  <Header as='h1'>Student or Recent Graduate?</Header>
+                  <Header as='h3'>Looking for an internship or a job?</Header>
+                </Grid.Column>
+                <Grid.Column textAlign='center' className='landingText'>
+                  <Icon size='huge' name='address card'/>
+                  <Header as='h1'>Sign Up!</Header>
+                  <Header as='h3'>Create a professional listing and highlight your accomplishments!</Header>
+                </Grid.Column>
+                <Grid.Column textAlign='center' className='landingText'>
+                  <Icon size='huge' name='handshake'/>
+                  <Header as='h1'>Get Connected!</Header>
+                  <Header as='h3'>Connect with local companies to kick start your career!</Header>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </Segment>
         </div>
     );
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
+import { Roles } from 'meteor/alanning:roles';
 import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
 
 /**
@@ -35,8 +36,8 @@ export default class Signin extends React.Component {
       } else {
         if (Meteor.user().profile === 'company') this.flag = 'company';
         if (Meteor.user().profile === 'student') this.flag = 'student';
+        if (Roles.userIsInRole(Meteor.userId(), 'admin')) this.flag = 'admin';
         this.setState({ error: '', redirectToReferer: true });
-        console.log(this.flag);
       }
     });
   }

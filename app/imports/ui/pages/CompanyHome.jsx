@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Table, Header, Loader } from 'semantic-ui-react';
+import { Container, Table, Header, Loader, Grid, Icon, Segment, Divider } from 'semantic-ui-react';
 import { Positions } from '/imports/api/position/position';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
@@ -17,8 +17,31 @@ class CompanyHome extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
+      <div className="companybackground">
         <Container>
-          <Header as="h2" textAlign="center">Company Home Page</Header>
+          <Segment>
+            <Header as="h2" textAlign="center">Student Home Page</Header>
+            <Divider/>
+            <Grid container centered columns={3}>
+              <Grid.Row>
+                  <Grid.Column textAlign='center' className='landingText'>
+                    <Icon size='huge' name='building'/>
+                    <Header as='h1'>Local Company?</Header>
+                    <Header as='h3'>Looking for talented individuals in your area?</Header>
+                  </Grid.Column>
+                  <Grid.Column textAlign='center' className='landingText'>
+                    <Icon size='huge' name='file alternate outline'/>
+                    <Header as='h1'>Create a Job Posting!</Header>
+                    <Header as='h3'>List your company's job opportunites.</Header>
+                  </Grid.Column>
+                  <Grid.Column textAlign='center' className='landingText'>
+                    <Icon size='huge' name='handshake'/>
+                    <Header as='h1'>Get Connected!</Header>
+                    <Header as='h3'>Match up with local talent.</Header>
+                  </Grid.Column>
+                </Grid.Row>
+            </Grid>
+          </Segment>        
           <Table celled>
             <Table.Header>
               <Table.Row>
@@ -33,6 +56,7 @@ class CompanyHome extends React.Component {
             </Table.Body>
           </Table>
         </Container>
+      </div>
     );
   }
 }

@@ -1,11 +1,10 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Table, Header, Loader } from 'semantic-ui-react';
+import { Container, Table, Header, Loader, Card, Segment } from 'semantic-ui-react';
 import { Profiles} from '/imports/api/profile/StudentProfile';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import ProfileAdmin from '../components/ProfileAdmin';
-import { Card } from 'semantic-ui-react/dist/commonjs/views/Card/Card';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListStudent extends React.Component {
@@ -18,22 +17,26 @@ class ListStudent extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
+      <div className="companybackground">
         <Container>
-          <Header as="h2" textAlign="center">List of Potential Student</Header>
-          <Table celled>
-            <Table.Header>
-              <Table.Row>
-                <Table.HeaderCell>Name</Table.HeaderCell>
-                <Table.HeaderCell>Quantity</Table.HeaderCell>
-                <Table.HeaderCell>Condition</Table.HeaderCell>
-                <Table.HeaderCell>Edit</Table.HeaderCell>
-              </Table.Row>
-            </Table.Header>
-            <Card.Group>
-              {this.props.profiles.map((profile, index)=> <ProfileAdmin key={index} profile={profile}/>)}
-            </Card.Group>
-          </Table>
+          <Segment>
+            <Header as="h2" textAlign="center">List of Potential Students</Header>
+            <Table celled>
+              <Table.Header>
+                <Table.Row>
+                  <Table.HeaderCell>Name</Table.HeaderCell>
+                  <Table.HeaderCell>Quantity</Table.HeaderCell>
+                  <Table.HeaderCell>Condition</Table.HeaderCell>
+                  <Table.HeaderCell>Edit</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
+              <Card.Group>
+                {this.props.profiles.map((profile, index)=> <ProfileAdmin key={index} profile={profile}/>)}
+              </Card.Group>
+            </Table>
+          </Segment>
         </Container>
+      </div>
     );
   }
 }
