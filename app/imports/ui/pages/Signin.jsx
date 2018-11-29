@@ -33,9 +33,9 @@ export default class Signin extends React.Component {
       if (err) {
         this.setState({ error: err.reason });
       } else {
-        this.setState({ error: '', redirectToReferer: true });
         if (Meteor.user().profile === 'company') this.flag = 'company';
         if (Meteor.user().profile === 'student') this.flag = 'student';
+        this.setState({ error: '', redirectToReferer: true });
         console.log(this.flag);
       }
     });
@@ -43,17 +43,18 @@ export default class Signin extends React.Component {
 
   /** Render the signin form. */
   render() {
-    const { from } = this.props.location.state || { from: { pathname: '/' } };
+    const { from } = this.props.location.state || { from: { pathname: `/${this.flag}home` } };
     // if correct authentication, redirect to page instead of login screen
     if (this.state.redirectToReferer) {
       return <Redirect to={from}/>;
     }
     // Otherwise return the Login form.
     return (
+      <div className="connect-background">
         <Container>
           <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
             <Grid.Column>
-              <Header as="h2" textAlign="center">
+              <Header as="h2" textAlign="center" inverted>
                 Login to your account
               </Header>
               <Form onSubmit={this.handleSubmit}>
@@ -80,10 +81,10 @@ export default class Signin extends React.Component {
                 </Segment>
               </Form>
               <Message>
-                <Link to="/signupstudent">Click here to Register as a student</Link>
+                <Link to="/signupstudent">Click here to Register as a Student</Link>
               </Message>
               <Message>
-                <Link to="/signupcompany">Click here to Register as a company</Link>
+                <Link to="/signupcompany">Click here to Register as a Company</Link>
               </Message>
               {this.state.error === '' ? (
                   ''
@@ -97,6 +98,7 @@ export default class Signin extends React.Component {
             </Grid.Column>
           </Grid>
         </Container>
+      </div>
     );
   }
 }

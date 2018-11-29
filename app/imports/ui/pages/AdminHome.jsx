@@ -22,17 +22,19 @@ class AdminHome extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
+      <div className="connect-background">
         <Container>
-          <Header as="h2" textAlign="center">Company Positions</Header>
+          <Header as="h2" textAlign="center" inverted>Company Positions</Header>
           <Card.Group>
             {this.props.positions.map((position, index)=> <PositionCardAdmin key={index} position={position}/>)}
           </Card.Group>
           <br></br>
-        <Header as="h2" textAlign="center">Student Profiles</Header>
-        <Card.Group>
-          {this.props.profiles.map((profile, index)=> <ProfileAdmin key={index} profile={profile}/>)}
-        </Card.Group>
+          <Header as="h2" textAlign="center" inverted>Student Profiles</Header>
+          <Card.Group>
+            {this.props.profiles.map((profile, index)=> <ProfileAdmin key={index} profile={profile}/>)}
+          </Card.Group>
         </Container>
+      </div>
     );
   }
 }

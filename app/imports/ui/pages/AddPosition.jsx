@@ -1,6 +1,6 @@
 import React from 'react';
 import { Positions, PositionSchema } from '/imports/api/position/position';
-import { Grid, Segment, Header } from 'semantic-ui-react';
+import { Grid, Segment, Header, Divider } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import SubmitField from 'uniforms-semantic/SubmitField';
@@ -12,7 +12,6 @@ import NestField from 'uniforms-semantic/NestField';
 import ListItemField from 'uniforms-semantic/ListItemField';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
-
 
 /** Renders the Page for adding a document. */
 class AddPosition extends React.Component {
@@ -44,24 +43,29 @@ class AddPosition extends React.Component {
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
+    const transparent={backgroundColor: 'transparent'};
     return (
-        <Grid container centered>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">Add Position</Header>
-            <AutoForm ref={(ref) => { this.formRef = ref; }} schema={PositionSchema} onSubmit={this.submit}>
-              <Segment>
-                <TextField name='name'/>
-                <TextField name='description'/>
+        <div className="companybackground">
+          <Grid container centered>
+            <Grid.Column>
+              <Header as="h2" textAlign="center" inverted>Add Position</Header>
+              <AutoForm ref={(ref) => {
+                this.formRef = ref;
+              }} schema={PositionSchema} onSubmit={this.submit}>
+                <Segment style={transparent} inverted>
+                  <TextField name='name'/>
+                  <TextField name='description'/>
 
-                <TextField Field name="requirement" />
+                  <TextField Field name="requirement"/>
 
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
-                <HiddenField name='owner' value='fakeuser@foo.com'/>
-              </Segment>
-            </AutoForm>
-          </Grid.Column>
-        </Grid>
+                  <SubmitField value='Submit'/>
+                  <ErrorsField/>
+                  <HiddenField name='owner' value='fakeuser@foo.com'/>
+                </Segment>
+              </AutoForm>
+            </Grid.Column>
+          </Grid>
+        </div>
 
     );
   }

@@ -16,7 +16,7 @@
 .studentbackground {
   background: url('/images/studentbg.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 400px;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@
 .companybackground {
   background: url('/images/companybg.png') no-repeat center center fixed;
   background-size: cover;
-  height: 400px;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
