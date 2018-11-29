@@ -8,9 +8,6 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import ListStudent from '../pages/ListStudent';
-import ListStuffAdmin from '../pages/ListStuffAdmin';
-import AddStuff from '../pages/AddStuff';
-import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import SignupStudent from '../pages/SignupStudent';
@@ -19,9 +16,11 @@ import Signout from '../pages/Signout';
 import CompanyHome from '../pages/CompanyHome';
 import AddPosition from '../pages/AddPosition';
 import EditPosition from '../pages/EditPosition';
+import EditProfile from '../pages/EditProfile';
 import StudentHome from '../pages/StudentHome';
 import StudentDescription from '../pages/StudentDescription';
 import AdminHome from '../pages/AdminHome';
+
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -40,7 +39,8 @@ class App extends React.Component {
               <ProtectedRoute path="/studentadd" component={StudentDescription}/>
               <ProtectedRoute path="/liststudent" component={ListStudent}/>
               <ProtectedRoute path="/companyadd" component={AddPosition}/>
-              <ProtectedRoute path="/edit/:_id" component={EditPosition}/>
+              <ProtectedRoute path="/editposition/:_id" component={EditPosition}/>
+              <ProtectedRoute path="/editprofile/:_id" component={EditProfile}/>
               <AdminProtectedRoute path="/admin" component={AdminHome}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
