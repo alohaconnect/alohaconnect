@@ -40,7 +40,7 @@ class ListStudent extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 ListStudent.propTypes = {
-  stuffs: PropTypes.array.isRequired,
+  profiles: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 

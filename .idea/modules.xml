@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/hoohui.iml" filepath="$PROJECT_DIR$/.idea/hoohui.iml" />
       <module fileurl="file://$PROJECT_DIR$/hoohui.iml" filepath="$PROJECT_DIR$/hoohui.iml" />
     </modules>
   </component>

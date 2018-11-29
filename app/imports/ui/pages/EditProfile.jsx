@@ -1,24 +1,23 @@
 import React from 'react';
 import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
-import { Positions, PositionSchema } from '/imports/api/position/position';import { Bert } from 'meteor/themeteorchef:bert';
+import { Profiles, ProfileSchema } from '/imports/api/profile/StudentProfile';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
-import NumField from 'uniforms-semantic/NumField';
-import SelectField from 'uniforms-semantic/SelectField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import HiddenField from 'uniforms-semantic/HiddenField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
+import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 
 /** Renders the Page for editing a single document. */
-class EditPosition extends React.Component {
+class EditProfile extends React.Component {
 
   /** On successful submit, insert the data. */
   submit(data) {
-    const { name, requirement, description, _id } = data;
-    Positions.update(_id, { $set: { name, requirement, description } }, (error) => (error ?
+    const { name, education, degree, experience, _id } = data;
+    Profiles.update(_id, { $set: { name, education, degree, experience } }, (error) => (error ?
         Bert.alert({ type: 'danger', message: `Update failed: ${error.message}` }) :
         Bert.alert({ type: 'success', message: 'Update succeeded' })));
   }
@@ -31,16 +30,15 @@ class EditPosition extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
     return (
-      <div className="companybackground">
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center">Edit Position</Header>
-            {/*<AutoForm ref={(ref) => { this.formRef = ref; }} schema={PositionSchema} onSubmit={this.submit}>*/}
-            <AutoForm schema={PositionSchema} onSubmit={this.submit} model={this.props.doc}>
+            <Header as="h2" textAlign="center">Edit Profile</Header>
+            <AutoForm schema={ProfileSchema} onSubmit={this.submit} model={this.props.doc}>
               <Segment>
                 <TextField name='name'/>
-                <TextField name='description'/>
-                <TextField name="requirement" />
+                <TextField name='education'/>
+                <TextField name="degree" />
+                <TextField name="experience" />
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner' value='fakeuser@foo.com'/>
@@ -48,13 +46,12 @@ class EditPosition extends React.Component {
             </AutoForm>
           </Grid.Column>
         </Grid>
-      </div>
     );
   }
 }
 
 /** Require the presence of a Position document in the props object. Uniforms adds 'model' to the props, which we use. */
-EditPosition.propTypes = {
+EditProfile.propTypes = {
   doc: PropTypes.object,
   model: PropTypes.object,
   ready: PropTypes.bool.isRequired,
@@ -65,9 +62,9 @@ export default withTracker(({ match }) => {
   // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
   const documentId = match.params._id;
   // Get access to Position documents.
-  const subscription = Meteor.subscribe('Position');
+  const subscription = Meteor.subscribe('Profile');
   return {
-    doc: Positions.findOne(documentId),
+    doc: Profiles.findOne(documentId),
     ready: subscription.ready(),
   };
-})(EditPosition);
+})(EditProfile);
