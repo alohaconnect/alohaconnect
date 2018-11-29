@@ -40,7 +40,7 @@ class EditPosition extends React.Component {
               <Segment>
                 <TextField name='name'/>
                 <TextField name='description'/>
-                <TextField name="requirement" />
+                <TextField Field name="requirement" />
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner' value='fakeuser@foo.com'/>

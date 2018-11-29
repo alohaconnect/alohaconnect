@@ -16,7 +16,7 @@ class PositionCard extends React.Component {
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
-            <Link to={`/editposition/${this.props.position._id}`}>Edit</Link>
+            <Link to={`/edit/${this.props.position._id}`}>Edit</Link>
           </Card.Content>
         </Card>
     );

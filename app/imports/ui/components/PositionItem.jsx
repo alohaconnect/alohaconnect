@@ -12,7 +12,7 @@ class PositionItem extends React.Component {
           <Table.Cell>{this.props.position.requirement}</Table.Cell>
           <Table.Cell>{this.props.position.description}</Table.Cell>
           <Table.Cell>
-            <Link to={`/editposition/${this.props.position._id}`}>Edit</Link>
+            <Link to={`/edit/${this.props.position._id}`}>Edit</Link>
           </Table.Cell>
         </Table.Row>
     );
