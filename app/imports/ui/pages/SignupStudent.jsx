@@ -38,7 +38,7 @@ export default class Signup extends React.Component {
   render() {
     return (
       <div className="connect-background">
-        <div className="layer">
+        <div className="page-layer">
           <Container>
             <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
               <Grid.Column>

@@ -23,7 +23,7 @@ class AdminHome extends React.Component {
   renderPage() {
     return (
       <div className="connect-background">
-        <div className="layer">
+        <div className="page-layer">
           <Container>
             <Header as="h1" textAlign="center" inverted>Company Positions</Header>
             <Card.Group>

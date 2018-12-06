@@ -6,7 +6,7 @@ class NotFound extends React.Component {
   render() {
     return (
       <div className="connect-background">
-        <div className="layer">
+        <div className="page-layer">
           <Header as="h2" textAlign="center" inverted>
             <p>Page not found</p>
           </Header>

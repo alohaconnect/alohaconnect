@@ -50,7 +50,7 @@ class Landing extends React.Component {
     Meteor.logout();
     return (
         <div className='connect-background'>
-          <div className="layer">
+          <div className="page-layer">
             <Grid textAlign="center" verticalAlign="middle" centered columns={1}>
               <Grid.Column>
                 <Image src='/images/AlohaConnectLogo.png' size='large'/>

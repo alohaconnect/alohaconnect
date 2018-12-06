@@ -3,7 +3,7 @@
 .connect-background {
     background: url('/images/sun.jpg') no-repeat center center fixed;
     background-size: cover; 
-    min-height: 700px;
+    height: 700px;
 }
 
 .layer {
@@ -17,13 +17,12 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    /* height: 100%; */
     position: relative;
     flex-wrap: wrap;
 }
 
 .page-layer {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 0;
     left: 0;
@@ -32,7 +31,6 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    /* height: 100%; */
     position: relative;
     flex-wrap: wrap;
     padding-top: 15px;

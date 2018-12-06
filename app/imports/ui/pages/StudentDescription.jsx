@@ -42,7 +42,7 @@ class StudentDescription extends React.Component {
     const transparent={backgroundColor: 'transparent'};
     return (
       <div className="connect-background">
-        <div className="layer">
+        <div className="page-layer">
           <Grid container centered>
             <Grid.Column>
               <AutoForm ref={(ref) => { this.formRef = ref; }} schema={ProfileSchema} onSubmit={this.submit}>

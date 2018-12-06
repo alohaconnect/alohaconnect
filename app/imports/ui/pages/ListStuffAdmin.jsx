@@ -18,7 +18,7 @@ class ListStuffAdmin extends React.Component {
   renderPage() {
     return (
       <div className="connect-background">
-        <div className="layer">
+        <div className="page-layer">
           <Container>
             <Header as="h2" textAlign="center">List Stuff (Admin)</Header>
             <Table celled>
