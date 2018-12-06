@@ -1,6 +1,6 @@
 import React from 'react';
 import { Profiles, ProfileSchema } from '/imports/api/profile/StudentProfile';
-import { Grid, Segment, Header, Divider } from 'semantic-ui-react';
+import { Grid, Segment, Header } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import SubmitField from 'uniforms-semantic/SubmitField';
@@ -39,15 +39,15 @@ class StudentDescription extends React.Component {
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
+    const transparent={backgroundColor: 'transparent'};
     return (
       <div className="connect-background">
         <div className="layer">
           <Grid container centered>
             <Grid.Column>
               <AutoForm ref={(ref) => { this.formRef = ref; }} schema={ProfileSchema} onSubmit={this.submit}>
-                <Segment>
-                  <Header as="h2" textAlign="center">Student Profile</Header>
-                  <Divider />
+                <Segment style={transparent} inverted>
+                  <Header as="h2" textAlign="center" inverted>Student Profile</Header>
                   <TextField name='name'/>
                   <TextField name='education'/>
                   <TextField name='degree'/>

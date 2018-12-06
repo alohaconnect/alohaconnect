@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Table, Header, Loader, Grid, Icon, Segment, Divider } from 'semantic-ui-react';
+import { Container, Table, Header, Loader, Grid, Icon, Divider } from 'semantic-ui-react';
 import { Positions } from '/imports/api/position/position';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
