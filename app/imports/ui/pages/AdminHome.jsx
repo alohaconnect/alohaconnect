@@ -25,12 +25,12 @@ class AdminHome extends React.Component {
       <div className="connect-background">
         <div className="layer">
           <Container>
-            <Header as="h2" textAlign="center" inverted>Company Positions</Header>
+            <Header as="h1" textAlign="center" inverted>Company Positions</Header>
             <Card.Group>
               {this.props.positions.map((position, index)=> <PositionCardAdmin key={index} position={position}/>)}
             </Card.Group>
             <br></br>
-            <Header as="h2" textAlign="center" inverted>Student Profiles</Header>
+            <Header as="h1" textAlign="center" inverted>Student Profiles</Header>
             <Card.Group>
               {this.props.profiles.map((profile, index)=> <ProfileAdmin key={index} profile={profile}/>)}
             </Card.Group>
