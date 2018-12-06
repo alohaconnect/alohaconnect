@@ -20,7 +20,7 @@ class CompanyHome extends React.Component {
       <div className="connect-background">
         <div className="page-layer">
           <Container>
-            <Header as="h2" textAlign="center" inverted>Company Home Page</Header>
+            <Header as="h1" textAlign="center" inverted>Company Home Page</Header>
             <Divider/>
             <Grid container centered columns={3}>
               <Grid.Row>

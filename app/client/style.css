@@ -35,6 +35,8 @@
     /* height: 100%; */
     position: relative;
     flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .studentbackground {
@@ -77,4 +79,8 @@
 
 .landingText h3 {
     font-family: 'Montserrat', sans-serif;
+}
+
+.addForms {
+    padding: 0 200px 0 200px !important;
 }

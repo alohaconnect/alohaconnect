@@ -32,10 +32,10 @@ class EditPosition extends React.Component {
   renderPage() {
     return (
       <div className="companybackground">
-        <div className="layer">
+        <div className="page-layer">
           <Grid container centered>
             <Grid.Column>
-              <Header as="h2" textAlign="center">Edit Position</Header>
+              <Header as="h1" textAlign="center">Edit Position</Header>
               {/*<AutoForm ref={(ref) => { this.formRef = ref; }} schema={PositionSchema} onSubmit={this.submit}>*/}
               <AutoForm schema={PositionSchema} onSubmit={this.submit} model={this.props.doc}>
                 <Segment>

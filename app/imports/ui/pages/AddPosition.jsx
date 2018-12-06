@@ -1,8 +1,9 @@
 import React from 'react';
 import { Positions, PositionSchema } from '/imports/api/position/position';
-import { Grid, Segment, Header } from 'semantic-ui-react';
+import { Grid, Segment, Header, TextArea } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
+import LongTextField from 'uniforms-semantic/LongTextField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import HiddenField from 'uniforms-semantic/HiddenField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
@@ -42,18 +43,18 @@ class AddPosition extends React.Component {
     const transparent={backgroundColor: 'transparent'};
     return (
         <div className="connect-background">
-          <div className="layer">
+          <div className="page-layer">
             <Grid container centered>
               <Grid.Column>
                 <AutoForm ref={(ref) => {
                   this.formRef = ref;
                 }} schema={PositionSchema} onSubmit={this.submit}>
-                  <Segment style={transparent} inverted>
-                    <Header as="h2" textAlign="center" inverted>Add Position</Header>
+                  <Header as="h1" textAlign="center" inverted>Add Position</Header>
+                  <Segment style={transparent} inverted className="addForms">
                     <TextField name='name'/>
-                    <TextField name='description'/>
+                    <LongTextField name='description'/>
 
-                    <TextField name="requirement"/>
+                    <LongTextField name="requirement"/>
 
                     <SubmitField value='Submit'/>
                     <ErrorsField/>

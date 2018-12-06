@@ -18,30 +18,30 @@ class StudentHome extends React.Component {
   renderPage() {
     return (
         <div className="connect-background">
-          <div className="layer">
-            <Segment>
-              <Header as="h2" textAlign="center">Student Home Page</Header>
+          <div className="page-layer">
+            <Container>
+              <Header as="h1" textAlign="center" inverted>Student Home Page</Header>
               <Divider/>
               <Grid container centered columns={3}>
                 <Grid.Row>
                   <Grid.Column textAlign='center' className='landingText'>
-                    <Icon size='huge' name='graduation cap'/>
-                    <Header as='h1'>Student or Recent Graduate?</Header>
-                    <Header as='h3'>Looking for an internship or a job?</Header>
+                    <Icon size='huge' name='graduation cap' inverted/>
+                    <Header as='h1' inverted>Student or Recent Graduate?</Header>
+                    <Header as='h3' inverted>Looking for an internship or a job?</Header>
                   </Grid.Column>
                   <Grid.Column textAlign='center' className='landingText'>
-                    <Icon size='huge' name='address card'/>
-                    <Header as='h1'>Sign Up!</Header>
-                    <Header as='h3'>Create a professional listing and highlight your accomplishments!</Header>
+                    <Icon size='huge' name='address card' inverted/>
+                    <Header as='h1' inverted>Sign Up!</Header>
+                    <Header as='h3' inverted>Create a professional listing and highlight your accomplishments!</Header>
                   </Grid.Column>
                   <Grid.Column textAlign='center' className='landingText'>
-                    <Icon size='huge' name='handshake'/>
-                    <Header as='h1'>Get Connected!</Header>
-                    <Header as='h3'>Connect with local companies to kick start your career!</Header>
+                    <Icon size='huge' name='handshake' inverted/>
+                    <Header as='h1' inverted>Get Connected!</Header>
+                    <Header as='h3' inverted>Connect with local companies to kick start your career!</Header>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
-            </Segment>
+            </Container>
           </div>
         </div>
     );

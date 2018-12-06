@@ -19,10 +19,10 @@ class ListStudent extends React.Component {
     const transparent={backgroundColor: 'transparent'};
     return (
       <div className="connect-background">
-        <div className="layer">
+        <div className="page-layer">
           <Container>
             <Segment style={transparent}>
-              <Header as="h2" textAlign="center" inverted>List of Potential Students</Header>
+              <Header as="h1" textAlign="center" inverted>List of Potential Students</Header>
               <Table celled style={transparent}>
                 <Table.Header>
                   <Table.Row>
