@@ -30,22 +30,26 @@ class EditProfile extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
     return (
-        <Grid container centered>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">Edit Profile</Header>
-            <AutoForm schema={ProfileSchema} onSubmit={this.submit} model={this.props.doc}>
-              <Segment>
-                <TextField name='name'/>
-                <TextField name='education'/>
-                <TextField name="degree" />
-                <TextField name="experience" />
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
-                <HiddenField name='owner' value='fakeuser@foo.com'/>
-              </Segment>
-            </AutoForm>
-          </Grid.Column>
-        </Grid>
+      <div className="companybackground">
+        <div className="page-layer">
+          <Grid container centered>
+            <Grid.Column>
+              <Header as="h1" textAlign="center">Edit Profile</Header>
+              <AutoForm schema={ProfileSchema} onSubmit={this.submit} model={this.props.doc}>
+                <Segment>
+                  <TextField name='name'/>
+                  <TextField name='education'/>
+                  <TextField name="degree" />
+                  <TextField name="experience" />
+                  <SubmitField value='Submit'/>
+                  <ErrorsField/>
+                  <HiddenField name='owner' value='fakeuser@foo.com'/>
+                </Segment>
+              </AutoForm>
+            </Grid.Column>
+          </Grid>
+        </div>
+      </div>
     );
   }
 }

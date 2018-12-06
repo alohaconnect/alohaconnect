@@ -12,7 +12,7 @@ class NavBar extends React.Component {
     const menuStyle = { marginBottom: '0px' };
     if (this.props.profile === 'student') this.navLink = "/studenthome";
     else if (this.props.profile === 'company') this.navLink = "/companyhome";
-    else if (Roles.userIsInRole(Meteor.userId(), 'admin')) this.navLink = "/admin";
+    else if (Roles.userIsInRole(Meteor.userId(), 'admin')) this.navLink = "/adminhome";
     else this.navLink = "/";
     return (
       <Menu style={menuStyle} attached="top" borderless inverted>
@@ -34,7 +34,7 @@ class NavBar extends React.Component {
         ) : ''}
 
         {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
+            <Menu.Item as={NavLink} activeClassName="active" exact to="/adminhome" key='admin'>Admin</Menu.Item>
         ) : ''}
         <Menu.Item position="right">
           {this.props.currentUser === '' ? (

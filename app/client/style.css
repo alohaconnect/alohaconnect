@@ -80,3 +80,7 @@
 .landingText h3 {
     font-family: 'Montserrat', sans-serif;
 }
+
+.addForms {
+    padding: 0 200px 0 200px !important;
+}

@@ -47,6 +47,7 @@ class Landing extends React.Component {
       console.log(this.flag);
       return <Redirect to={from}/>;
     }
+    Meteor.logout();
     return (
         <div className='connect-background'>
           <div className="layer">
