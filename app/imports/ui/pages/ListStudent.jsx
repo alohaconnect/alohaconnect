@@ -17,25 +17,27 @@ class ListStudent extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-      <div className="companybackground">
-        <Container>
-          <Segment>
-            <Header as="h2" textAlign="center">List of Potential Students</Header>
-            <Table celled>
-              <Table.Header>
-                <Table.Row>
-                  <Table.HeaderCell>Name</Table.HeaderCell>
-                  <Table.HeaderCell>Quantity</Table.HeaderCell>
-                  <Table.HeaderCell>Condition</Table.HeaderCell>
-                  <Table.HeaderCell>Edit</Table.HeaderCell>
-                </Table.Row>
-              </Table.Header>
-              <Card.Group>
-                {this.props.profiles.map((profile, index)=> <ProfileAdmin key={index} profile={profile}/>)}
-              </Card.Group>
-            </Table>
-          </Segment>
-        </Container>
+      <div className="connect-background">
+        <div className="layer">
+          <Container>
+            <Segment>
+              <Header as="h2" textAlign="center">List of Potential Students</Header>
+              <Table celled>
+                <Table.Header>
+                  <Table.Row>
+                    <Table.HeaderCell>Name</Table.HeaderCell>
+                    <Table.HeaderCell>Quantity</Table.HeaderCell>
+                    <Table.HeaderCell>Condition</Table.HeaderCell>
+                    <Table.HeaderCell>Edit</Table.HeaderCell>
+                  </Table.Row>
+                </Table.Header>
+                <Card.Group>
+                  {this.props.profiles.map((profile, index)=> <ProfileAdmin key={index} profile={profile}/>)}
+                </Card.Group>
+              </Table>
+            </Segment>
+          </Container>
+        </div>
       </div>
     );
   }

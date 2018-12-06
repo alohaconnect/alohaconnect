@@ -41,26 +41,28 @@ class AddPosition extends React.Component {
   render() {
     const transparent={backgroundColor: 'transparent'};
     return (
-        <div className="companybackground">
-          <Grid container centered>
-            <Grid.Column>
-              <AutoForm ref={(ref) => {
-                this.formRef = ref;
-              }} schema={PositionSchema} onSubmit={this.submit}>
-                <Segment style={transparent} inverted>
-                  <Header as="h2" textAlign="center" inverted>Add Position</Header>
-                  <TextField name='name'/>
-                  <TextField name='description'/>
+        <div className="connect-background">
+          <div className="layer">
+            <Grid container centered>
+              <Grid.Column>
+                <AutoForm ref={(ref) => {
+                  this.formRef = ref;
+                }} schema={PositionSchema} onSubmit={this.submit}>
+                  <Segment style={transparent} inverted>
+                    <Header as="h2" textAlign="center" inverted>Add Position</Header>
+                    <TextField name='name'/>
+                    <TextField name='description'/>
 
-                  <TextField name="requirement"/>
+                    <TextField name="requirement"/>
 
-                  <SubmitField value='Submit'/>
-                  <ErrorsField/>
-                  <HiddenField name='owner' value='fakeuser@foo.com'/>
-                </Segment>
-              </AutoForm>
-            </Grid.Column>
-          </Grid>
+                    <SubmitField value='Submit'/>
+                    <ErrorsField/>
+                    <HiddenField name='owner' value='fakeuser@foo.com'/>
+                  </Segment>
+                </AutoForm>
+              </Grid.Column>
+            </Grid>
+          </div>
         </div>
 
     );

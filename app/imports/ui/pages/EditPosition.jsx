@@ -32,22 +32,24 @@ class EditPosition extends React.Component {
   renderPage() {
     return (
       <div className="companybackground">
-        <Grid container centered>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">Edit Position</Header>
-            {/*<AutoForm ref={(ref) => { this.formRef = ref; }} schema={PositionSchema} onSubmit={this.submit}>*/}
-            <AutoForm schema={PositionSchema} onSubmit={this.submit} model={this.props.doc}>
-              <Segment>
-                <TextField name='name'/>
-                <TextField name='description'/>
-                <TextField name="requirement" />
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
-                <HiddenField name='owner' value='fakeuser@foo.com'/>
-              </Segment>
-            </AutoForm>
-          </Grid.Column>
-        </Grid>
+        <div className="layer">
+          <Grid container centered>
+            <Grid.Column>
+              <Header as="h2" textAlign="center">Edit Position</Header>
+              {/*<AutoForm ref={(ref) => { this.formRef = ref; }} schema={PositionSchema} onSubmit={this.submit}>*/}
+              <AutoForm schema={PositionSchema} onSubmit={this.submit} model={this.props.doc}>
+                <Segment>
+                  <TextField name='name'/>
+                  <TextField name='description'/>
+                  <TextField name="requirement" />
+                  <SubmitField value='Submit'/>
+                  <ErrorsField/>
+                  <HiddenField name='owner' value='fakeuser@foo.com'/>
+                </Segment>
+              </AutoForm>
+            </Grid.Column>
+          </Grid>
+        </div>
       </div>
     );
   }

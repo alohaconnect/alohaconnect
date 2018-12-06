@@ -49,55 +49,57 @@ class Landing extends React.Component {
     }
     return (
         <div className='connect-background'>
-          <Grid textAlign="center" verticalAlign="middle" centered columns={1}>
-            <Grid.Column>
-              <Image src='/images/AlohaConnectLogo.png' size='large'/>
-              <Form onSubmit={this.handleSubmit}>
-                <Segment stacked>
-                  <div style={text}>
-                    Login to continue your journey!
-                  </div>
-                  <Form.Input
-                      label="Email"
-                      icon="user"
-                      iconPosition="left"
-                      name="email"
-                      type="email"
-                      placeholder="E-mail address"
-                      onChange={this.handleChange}
-                  />
-                  <Form.Input
-                      label="Password"
-                      icon="lock"
-                      iconPosition="left"
-                      name="password"
-                      placeholder="Password"
-                      type="password"
-                      onChange={this.handleChange}
-                  />
-                  <Form.Button content="Submit"/>
-                  <div style={text}>
-                    Don't have an account?
-                  </div>
-                  <Message style={links}>
-                    <Link to="/signupstudent">Click here to Register as a Student</Link>
-                  </Message>
-                  <Message style={links}>
-                    <Link to="/signupcompany">Click here to Register as a Company</Link>
-                  </Message>
-                </Segment>
-              </Form>
-              {this.state.error === '' ? (
-                  ''
-              ) : (
-                  <Message
-                      error
-                      header="Login was not successful"
-                      content={this.state.error}
-                  />
-              )}
-            </Grid.Column>
-          </Grid>
+          <div className="layer">
+            <Grid textAlign="center" verticalAlign="middle" centered columns={1}>
+              <Grid.Column>
+                <Image src='/images/AlohaConnectLogo.png' size='large'/>
+                <Form onSubmit={this.handleSubmit}>
+                  <Segment stacked>
+                    <div style={text}>
+                      Log in to continue your journey!
+                    </div>
+                    <Form.Input
+                        label="Email"
+                        icon="user"
+                        iconPosition="left"
+                        name="email"
+                        type="email"
+                        placeholder="E-mail address"
+                        onChange={this.handleChange}
+                    />
+                    <Form.Input
+                        label="Password"
+                        icon="lock"
+                        iconPosition="left"
+                        name="password"
+                        placeholder="Password"
+                        type="password"
+                        onChange={this.handleChange}
+                    />
+                    <Form.Button content="Submit"/>
+                    <div style={text}>
+                      Don't have an account?
+                    </div>
+                    <Message style={links}>
+                      <Link to="/signupstudent">Click here to Register as a Student</Link>
+                    </Message>
+                    <Message style={links}>
+                      <Link to="/signupcompany">Click here to Register as a Company</Link>
+                    </Message>
+                  </Segment>
+                </Form>
+                {this.state.error === '' ? (
+                    ''
+                ) : (
+                    <Message
+                        error
+                        header="Login was not successful"
+                        content={this.state.error}
+                    />
+                )}
+              </Grid.Column>
+            </Grid>
+          </div>
         </div>  
     );
   }

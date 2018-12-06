@@ -17,45 +17,45 @@ class CompanyHome extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-      <div className="companybackground">
-        <Container>
-          <Segment>
-            <Header as="h2" textAlign="center">Company Home Page</Header>
+      <div className="connect-background">
+        <div className="page-layer">
+          <Container>
+            <Header as="h2" textAlign="center" inverted>Company Home Page</Header>
             <Divider/>
             <Grid container centered columns={3}>
               <Grid.Row>
                   <Grid.Column textAlign='center' className='landingText'>
-                    <Icon size='huge' name='building'/>
-                    <Header as='h1'>Local Company?</Header>
-                    <Header as='h3'>Looking for talented individuals in your area?</Header>
+                    <Icon size='huge' name='building' inverted/>
+                    <Header as='h1' inverted>Local Company?</Header>
+                    <Header as='h3' inverted>Looking for talented individuals in your area?</Header>
                   </Grid.Column>
                   <Grid.Column textAlign='center' className='landingText'>
-                    <Icon size='huge' name='file alternate outline'/>
-                    <Header as='h1'>Create a Job Posting!</Header>
-                    <Header as='h3'>List your company's job opportunites.</Header>
+                    <Icon size='huge' name='file alternate outline' inverted/>
+                    <Header as='h1' inverted>Create a Job Posting!</Header>
+                    <Header as='h3' inverted>List your company's job opportunites.</Header>
                   </Grid.Column>
                   <Grid.Column textAlign='center' className='landingText'>
-                    <Icon size='huge' name='handshake'/>
-                    <Header as='h1'>Get Connected!</Header>
-                    <Header as='h3'>Match up with local talent.</Header>
+                    <Icon size='huge' name='handshake' inverted/>
+                    <Header as='h1' inverted>Get Connected!</Header>
+                    <Header as='h3' inverted>Match up with local talent.</Header>
                   </Grid.Column>
                 </Grid.Row>
-            </Grid>
-          </Segment>        
-          <Table celled>
-            <Table.Header>
-              <Table.Row>
-                <Table.HeaderCell>Position</Table.HeaderCell>
-                <Table.HeaderCell>Requirement</Table.HeaderCell>
-                <Table.HeaderCell>Description</Table.HeaderCell>
-                <Table.HeaderCell>Edit</Table.HeaderCell>
-              </Table.Row>
-            </Table.Header>
-            <Table.Body>
-              {this.props.positions.map((position) => <PositionItem key={position._id} position={position} />)}
-            </Table.Body>
-          </Table>
-        </Container>
+            </Grid>        
+            <Table celled>
+              <Table.Header>
+                <Table.Row>
+                  <Table.HeaderCell>Position</Table.HeaderCell>
+                  <Table.HeaderCell>Requirement</Table.HeaderCell>
+                  <Table.HeaderCell>Description</Table.HeaderCell>
+                  <Table.HeaderCell>Edit</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
+              <Table.Body>
+                {this.props.positions.map((position) => <PositionItem key={position._id} position={position} />)}
+              </Table.Body>
+            </Table>
+          </Container>
+        </div>
       </div>
     );
   }

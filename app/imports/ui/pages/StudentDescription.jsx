@@ -40,24 +40,26 @@ class StudentDescription extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
     return (
-      <div className="studentbackground">
-        <Grid container centered>
-          <Grid.Column>
-            <AutoForm ref={(ref) => { this.formRef = ref; }} schema={ProfileSchema} onSubmit={this.submit}>
-              <Segment>
-                <Header as="h2" textAlign="center">Student Profile</Header>
-                <Divider />
-                <TextField name='name'/>
-                <TextField name='education'/>
-                <TextField name='degree'/>
-                <TextField name='experience'/>
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
-                <HiddenField name='owner' value='fakeuser@foo.com'/>
-              </Segment>
-            </AutoForm>
-          </Grid.Column>
-        </Grid>
+      <div className="connect-background">
+        <div className="layer">
+          <Grid container centered>
+            <Grid.Column>
+              <AutoForm ref={(ref) => { this.formRef = ref; }} schema={ProfileSchema} onSubmit={this.submit}>
+                <Segment>
+                  <Header as="h2" textAlign="center">Student Profile</Header>
+                  <Divider />
+                  <TextField name='name'/>
+                  <TextField name='education'/>
+                  <TextField name='degree'/>
+                  <TextField name='experience'/>
+                  <SubmitField value='Submit'/>
+                  <ErrorsField/>
+                  <HiddenField name='owner' value='fakeuser@foo.com'/>
+                </Segment>
+              </AutoForm>
+            </Grid.Column>
+          </Grid>
+        </div>
       </div>
     );
   }
