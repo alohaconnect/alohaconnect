@@ -16,13 +16,14 @@ class ListStudent extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+    const transparent={backgroundColor: 'transparent'};
     return (
       <div className="connect-background">
         <div className="layer">
           <Container>
-            <Segment>
-              <Header as="h2" textAlign="center">List of Potential Students</Header>
-              <Table celled>
+            <Segment style={transparent}>
+              <Header as="h2" textAlign="center" inverted>List of Potential Students</Header>
+              <Table celled style={transparent}>
                 <Table.Header>
                   <Table.Row>
                     <Table.HeaderCell>Name</Table.HeaderCell>
