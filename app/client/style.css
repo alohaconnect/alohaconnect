@@ -3,7 +3,7 @@
 .connect-background {
     background: url('/images/sun.jpg') no-repeat center center fixed;
     background-size: cover; 
-    height: 700px;
+    min-height: 700px;
 }
 
 .layer {
@@ -35,6 +35,8 @@
     /* height: 100%; */
     position: relative;
     flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .studentbackground {
