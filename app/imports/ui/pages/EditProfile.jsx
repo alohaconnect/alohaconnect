@@ -29,14 +29,15 @@ class EditProfile extends React.Component {
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
+    const transparent={backgroundColor: 'transparent'};
     return (
       <div className="companybackground">
         <div className="page-layer">
           <Grid container centered>
             <Grid.Column>
-              <Header as="h1" textAlign="center">Edit Profile</Header>
+              <Header as="h1" textAlign="center" inverted>Edit Profile</Header>
               <AutoForm schema={ProfileSchema} onSubmit={this.submit} model={this.props.doc}>
-                <Segment>
+                <Segment style={transparent} className="addForms" inverted>
                   <TextField name='name'/>
                   <TextField name='education'/>
                   <TextField name="degree" />
@@ -66,7 +67,7 @@ export default withTracker(({ match }) => {
   // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
   const documentId = match.params._id;
   // Get access to Position documents.
-  const subscription = Meteor.subscribe('Profile');
+  const subscription = Meteor.subscribe('Profiles');
   return {
     doc: Profiles.findOne(documentId),
     ready: subscription.ready(),
