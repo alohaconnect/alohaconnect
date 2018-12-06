@@ -39,14 +39,15 @@ class StudentDescription extends React.Component {
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
+    const transparent={backgroundColor: 'transparent'};
     return (
       <div className="connect-background">
-        <div className="layer">
+        <div className="page-layer">
           <Grid container centered>
             <Grid.Column>
               <AutoForm ref={(ref) => { this.formRef = ref; }} schema={ProfileSchema} onSubmit={this.submit}>
-                <Segment>
-                  <Header as="h2" textAlign="center">Student Profile</Header>
+                <Header as="h1" textAlign="center" inverted>Student Profile</Header>
+                <Segment style={transparent} className="addForms" inverted>
                   <Divider />
                   <TextField name='name'/>
                   <TextField name='education'/>
